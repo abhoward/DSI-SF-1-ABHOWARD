@@ -1,251 +1,251 @@
 	num_votes	rating	tconst	title	year	genre	runtime
-0	1658155	9.3	tt0111161	The Shawshank Redemption	1994	[Crime, Drama]	2.37
-1	1134965	9.2	tt0068646	The Godfather	1972	[Crime, Drama]	2.92
-2	775099	9.0	tt0071562	The Godfather: Part II	1974	[Crime, Drama]	3.37
-3	1643822	9.0	tt0468569	The Dark Knight	2008	[Action, Crime, Thriller]	2.53
-4	848248	8.9	tt0108052	Schindler's List	1993	[Biography, Drama, History]	3.25
-5	437265	8.9	tt0050083	12 Angry Men	1957	[Crime, Drama]	1.6
-6	1299481	8.9	tt0110912	Pulp Fiction	1994	[Crime, Drama]	2.57
-7	1193263	8.9	tt0167260	The Lord of the Rings: The Return of the King	2003	[Adventure, Drama, Fantasy]	3.35
-8	494287	8.9	tt0060196	The Good, the Bad and the Ugly	1966	[Western]	2.68
-9	1320099	8.9	tt0137523	Fight Club	1999	[Drama]	2.32
-10	1216725	8.8	tt0120737	The Lord of the Rings: The Fellowship of the Ring	2001	[Adventure, Drama, Fantasy]	2.97
-11	820141	8.8	tt0080684	Star Wars: Episode V - The Empire Strikes Back	1980	[Action, Adventure, Fantasy, Sci-Fi]	2.07
-12	1223279	8.8	tt0109830	Forrest Gump	1994	[Drama, Romance]	2.37
-13	1437427	8.8	tt1375666	Inception	2010	[Action, Mystery, Sci-Fi, Thriller]	2.47
-14	1079439	8.7	tt0167261	The Lord of the Rings: The Two Towers	2002	[Action, Adventure, Drama, Fantasy]	2.98
-15	667913	8.7	tt0073486	One Flew Over the Cuckoo's Nest	1975	[Drama]	2.22
-16	714790	8.7	tt0099685	Goodfellas	1990	[Biography, Crime, Drama]	2.43
-17	1194786	8.7	tt0133093	The Matrix	1999	[Action, Sci-Fi]	2.27
-18	225158	8.7	tt0047478	Seven Samurai	1954	[Action, Adventure, Drama]	2.63
-19	893744	8.7	tt0076759	Star Wars	1977	[Action, Adventure, Fantasy, Sci-Fi]	2.02
-20	524043	8.7	tt0317248	City of God	2002	[Crime, Drama]	2.17
-21	1002890	8.6	tt0114369	Se7en	1995	[Crime, Drama, Mystery, Thriller]	2.12
-22	868202	8.6	tt0102926	The Silence of the Lambs	1991	[Crime, Drama, Thriller]	1.97
-23	270765	8.6	tt0038650	It's a Wonderful Life	1946	[Drama, Family, Fantasy, Romance]	2.17
-24	727101	8.6	tt0114814	The Usual Suspects	1995	[Crime, Drama, Mystery, Thriller]	1.77
-25	410329	8.6	tt0118799	Life Is Beautiful	1997	[Comedy, Drama, Romance, War]	1.93
-26	711038	8.6	tt0110413	Léon: The Professional	1994	[Crime, Drama, Thriller]	1.83
-27	212010	8.6	tt0064116	Once Upon a Time in the West	1968	[Western]	2.42
-28	407431	8.6	tt0245429	Spirited Away	2001	[Animation, Adventure, Family, Fantasy]	2.08
-29	863383	8.6	tt0120815	Saving Private Ryan	1998	[Action, Drama, War]	2.82
-30	768920	8.6	tt0120586	American History X	1998	[Crime, Drama]	1.68
-31	896962	8.6	tt0816692	Interstellar	2014	[Adventure, Drama, Sci-Fi]	2.82
-32	381285	8.6	tt0034583	Casablanca	1942	[Drama, Romance, War]	1.7
-33	413794	8.5	tt0054215	Psycho	1960	[Horror, Mystery, Thriller]	1.82
-34	105593	8.6	tt0021749	City Lights	1931	[Comedy, Drama, Romance]	1.45
-35	649220	8.5	tt0082971	Raiders of the Lost Ark	1981	[Action, Adventure]	1.92
-36	489765	8.6	tt1675434	The Intouchables	2011	[Biography, Comedy, Drama]	1.87
-37	310112	8.5	tt0047396	Rear Window	1954	[Mystery, Thriller]	1.87
-38	139481	8.6	tt0027977	Modern Times	1936	[Comedy, Drama]	1.45
-39	765168	8.5	tt0120689	The Green Mile	1999	[Crime, Drama, Fantasy, Mystery]	3.15
-40	731433	8.5	tt0103064	Terminator 2: Judgment Day	1991	[Action, Sci-Fi]	2.55
-41	487525	8.5	tt0253474	The Pianist	2002	[Biography, Drama, War]	2.5
-42	856404	8.5	tt0407887	The Departed	2006	[Crime, Drama, Thriller]	2.52
-43	715877	8.5	tt0088763	Back to the Future	1985	[Adventure, Comedy, Sci-Fi]	1.93
-44	380780	8.5	tt2582802	Whiplash	2014	[Drama, Music]	1.78
-45	964128	8.5	tt0172495	Gladiator	2000	[Action, Drama]	2.58
-46	830388	8.5	tt0209144	Memento	2000	[Mystery, Thriller]	1.88
-47	443289	8.5	tt0078788	Apocalypse Now	1979	[Drama, War]	2.55
-48	825550	8.5	tt0482571	The Prestige	2006	[Drama, Mystery, Sci-Fi, Thriller]	2.17
-49	628923	8.5	tt0110357	The Lion King	1994	[Animation, Adventure, Drama, Family, Musical]	1.48
-50	336717	8.5	tt0057012	Dr. Strangelove or: How I Learned to Stop Worrying and Love the Bomb	1964	[Comedy]	1.58
-51	136882	8.5	tt0043014	Sunset Blvd.	1950	[Drama, Film-Noir]	1.83
-52	552879	8.5	tt0078748	Alien	1979	[Horror, Sci-Fi]	1.95
-53	134293	8.5	tt0032553	The Great Dictator	1940	[Comedy, Drama, War]	2.08
-54	254789	8.5	tt0405094	The Lives of Others	2006	[Drama, Thriller]	2.28
-55	148957	8.5	tt0095765	Cinema Paradiso	1988	[Drama]	2.58
-56	932408	8.5	tt1853728	Django Unchained	2012	[Drama, Western]	2.75
-57	597357	8.4	tt0081505	The Shining	1980	[Drama, Horror]	2.4
-58	118405	8.5	tt0050825	Paths of Glory	1957	[Drama, War]	1.47
-59	134339	8.5	tt0095327	Grave of the Fireflies	1988	[Animation, Drama, War]	1.48
-60	701609	8.4	tt0910970	WALL·E	2008	[Animation, Adventure, Family, Sci-Fi]	1.63
-61	1121801	8.5	tt1345836	The Dark Knight Rises	2012	[Action, Thriller]	2.73
-62	808222	8.4	tt0169547	American Beauty	1999	[Drama]	2.03
-63	480249	8.4	tt0090605	Aliens	1986	[Action, Horror, Sci-Fi]	2.57
-64	216522	8.4	tt0119698	Princess Mononoke	1997	[Animation, Adventure, Fantasy]	2.23
-65	348441	8.4	tt0364569	Oldboy	2003	[Drama, Mystery, Thriller]	2.0
-66	293156	8.4	tt0033467	Citizen Kane	1941	[Drama, Mystery]	1.98
-67	216806	8.4	tt0053125	North by Northwest	1959	[Adventure, Crime, Mystery, Thriller]	2.27
-68	216817	8.4	tt0087843	Once Upon a Time in America	1984	[Crime, Drama]	2.32
-69	165469	8.4	tt0082096	Das Boot	1981	[Adventure, Drama, Thriller, War]	3.98
-70	243592	8.4	tt0052357	Vertigo	1958	[Mystery, Romance, Thriller]	2.15
-71	666753	8.4	tt0086190	Star Wars: Episode VI - Return of the Jedi	1983	[Action, Adventure, Fantasy, Sci-Fi]	2.18
-72	61351	8.4	tt0051201	Witness for the Prosecution	1957	[Crime, Drama, Mystery, Thriller]	1.93
-73	97300	8.4	tt0022100	M	1931	[Crime, Drama, Mystery, Thriller]	1.65
-74	651227	8.4	tt0105236	Reservoir Dogs	1992	[Crime, Drama, Thriller]	1.65
-75	524585	8.4	tt0211915	Amélie	2001	[Comedy, Romance]	2.03
-76	723832	8.4	tt0112573	Braveheart	1995	[Biography, Drama, History, War]	2.97
-77	562903	8.4	tt0180093	Requiem for a Dream	2000	[Drama]	1.7
-78	546892	8.4	tt0066921	A Clockwork Orange	1971	[Crime, Drama, Sci-Fi]	2.27
-79	496322	8.3	tt0075314	Taxi Driver	1976	[Crime, Drama]	1.88
-80	95676	8.4	tt0036775	Double Indemnity	1944	[Crime, Drama, Film-Noir, Mystery, Thriller]	1.78
-81	531965	8.3	tt0435761	Toy Story 3	2010	[Animation, Adventure, Comedy, Family, Fantasy]	1.72
-82	210595	8.4	tt0056592	To Kill a Mockingbird	1962	[Crime, Drama]	2.15
-83	189151	8.4	tt0056172	Lawrence of Arabia	1962	[Adventure, Biography, Drama, History, War]	3.78
-84	653405	8.3	tt0338013	Eternal Sunshine of the Spotless Mind	2004	[Drama, Romance, Sci-Fi]	1.8
-85	475139	8.3	tt0093058	Full Metal Jacket	1987	[Drama, War]	1.93
-86	265770	8.3	tt0086879	Amadeus	1984	[Biography, Drama, History, Music]	2.67
-87	172255	8.3	tt0070735	The Sting	1973	[Comedy, Crime, Drama]	2.15
-88	418535	8.3	tt0062622	2001: A Space Odyssey	1968	[Adventure, Mystery, Sci-Fi]	2.48
-89	92341	8.3	tt0040522	Bicycle Thieves	1948	[Drama]	1.48
-90	147193	8.3	tt0045152	Singin' in the Rain	1952	[Comedy, Musical, Romance]	1.72
-91	590976	8.3	tt0208092	Snatch.	2000	[Comedy, Crime]	1.7
-92	608668	8.3	tt0114709	Toy Story	1995	[Animation, Adventure, Comedy, Family, Fantasy]	1.35
-93	375879	8.3	tt0071853	Monty Python and the Holy Grail	1975	[Adventure, Comedy, Fantasy]	1.52
-94	865287	8.3	tt0361748	Inglourious Basterds	2009	[Adventure, Drama, War]	2.55
-95	65285	8.4	tt0012349	The Kid	1921	[Comedy, Drama, Family]	1.13
-96	407829	8.3	tt0119488	L.A. Confidential	1997	[Crime, Drama, Mystery, Thriller]	2.3
-97	153642	8.3	tt0059578	For a Few Dollars More	1965	[Western]	2.2
-98	107141	8.3	tt0053604	The Apartment	1960	[Comedy, Drama, Romance]	2.08
-99	100511	8.3	tt0042876	Rashomon	1950	[Crime, Drama]	1.47
-100	505731	8.3	tt0097576	Indiana Jones and the Last Crusade	1989	[Action, Adventure, Fantasy]	2.12
-101	527495	8.3	tt0086250	Scarface	1983	[Crime, Drama]	2.83
-102	148702	8.4	tt1832382	A Separation	2011	[Drama, Mystery]	2.05
-103	109706	8.3	tt0017136	Metropolis	1927	[Drama, Sci-Fi]	1.9
-104	81486	8.3	tt0042192	All About Eve	1950	[Drama]	2.3
-105	72563	8.3	tt0055630	Yojimbo	1961	[Drama]	1.83
-106	25249	8.5	tt0118849	Children of Heaven	1997	[Drama, Family]	1.48
-107	77761	8.3	tt0040897	The Treasure of the Sierra Madre	1948	[Adventure, Drama]	2.1
-108	961183	8.3	tt0372784	Batman Begins	2005	[Action, Adventure]	2.33
-109	164669	8.3	tt2106476	The Hunt	2012	[Drama]	1.92
-110	200288	8.4	tt1187043	3 Idiots	2009	[Comedy, Drama]	2.83
-111	172039	8.3	tt0053291	Some Like It Hot	1959	[Comedy, Crime, Romance]	2.0
-112	591990	8.3	tt0119217	Good Will Hunting	1997	[Drama]	2.1
-113	272666	8.3	tt0105695	Unforgiven	1992	[Western]	2.18
-114	648579	8.3	tt1049413	Up	2009	[Animation, Adventure, Comedy, Family]	1.6
-115	111679	8.3	tt0041959	The Third Man	1949	[Film-Noir, Mystery, Thriller]	1.55
-116	231335	8.3	tt0081398	Raging Bull	1980	[Biography, Drama, Sport]	2.15
-117	318825	8.3	tt2096673	Inside Out	2015	[Animation, Adventure, Comedy, Drama, Family, Fantasy]	1.58
-118	244474	8.3	tt0363163	Downfall	2004	[Biography, Drama, History, War]	2.6
-119	202392	8.3	tt3498820	Captain America: Civil War	2016	[Action, Adventure, Sci-Fi, Thriller]	2.45
-120	582540	8.2	tt0095016	Die Hard	1988	[Action, Thriller]	2.18
-121	162621	8.3	tt0057115	The Great Escape	1963	[Adventure, Drama, History, Thriller, War]	2.87
-122	212417	8.2	tt0071315	Chinatown	1974	[Drama, Mystery, Thriller]	2.17
-123	424573	8.2	tt0113277	Heat	1995	[Crime, Drama, Thriller]	2.83
-124	136411	8.3	tt3170832	Room	2015	[Drama]	1.97
-125	459210	8.2	tt0457430	Pan's Labyrinth	2006	[Drama, Fantasy, War]	1.97
-126	98833	8.3	tt0047296	On the Waterfront	1954	[Crime, Drama, Romance]	1.8
-127	167111	8.3	tt0096283	My Neighbor Totoro	1988	[Animation, Family, Fantasy]	1.43
-128	76230	8.3	tt0089881	Ran	1985	[Action, Drama]	2.7
-129	41213	8.3	tt0044741	Ikiru	1952	[Drama]	2.38
-130	76017	8.3	tt0031679	Mr. Smith Goes to Washington	1939	[Comedy, Drama]	2.15
-131	146354	8.2	tt0050212	The Bridge on the River Kwai	1957	[Adventure, Drama, War]	2.68
-132	531002	8.3	tt2488496	Star Wars: Episode VII - The Force Awakens	2015	[Action, Fantasy, Sci-Fi, Thriller]	2.27
-133	66321	8.3	tt0015864	The Gold Rush	1925	[Adventure, Comedy, Drama]	1.2
-134	128214	8.2	tt1305806	The Secret in Their Eyes	2009	[Drama, Mystery, Thriller]	2.15
-135	109682	8.2	tt0050976	The Seventh Seal	1957	[Drama, Fantasy]	1.6
-136	28387	8.3	tt0018455	Sunrise	1927	[Drama, Romance]	1.57
-137	454336	8.2	tt0083658	Blade Runner	1982	[Sci-Fi, Thriller]	1.95
-138	408506	8.2	tt0120735	Lock, Stock and Two Smoking Barrels	1998	[Comedy, Crime]	1.78
-139	208748	8.2	tt0347149	Howl's Moving Castle	2004	[Animation, Adventure, Family, Fantasy]	1.98
-140	327150	8.2	tt0112641	Casino	1995	[Biography, Crime, Drama]	2.97
-141	61930	8.2	tt0050986	Wild Strawberries	1957	[Drama, Romance]	1.52
-142	52398	8.2	tt0017925	The General	1926	[Action, Adventure, Comedy, Drama, War]	1.25
-143	27272	8.6	tt0074896	The Message	1976	[Adventure, Biography, Drama, History, War]	2.95
-144	159295	8.2	tt0080678	The Elephant Man	1980	[Biography, Drama]	2.07
-145	325788	8.2	tt1291584	Warrior	2011	[Drama, Sport]	2.33
-146	757004	8.2	tt0993846	The Wolf of Wall Street	2013	[Biography, Comedy, Crime, Drama]	3.0
-147	43296	8.3	tt0055031	Judgment at Nuremberg	1961	[Drama, War]	3.1
-148	597109	8.2	tt0268978	A Beautiful Mind	2001	[Biography, Drama]	2.25
-149	777033	8.2	tt0434409	V for Vendetta	2005	[Action, Drama, Thriller]	2.2
-150	93726	8.3	tt2948356	Zootopia	2016	[Animation, Action, Adventure, Comedy, Crime, Family]	1.8
-151	553014	8.2	tt1205489	Gran Torino	2008	[Drama]	1.93
-152	526932	8.2	tt0118715	The Big Lebowski	1998	[Comedy, Crime]	1.95
-153	77943	8.2	tt1255953	Incendies	2010	[Drama, Mystery, War]	2.32
-154	228659	8.2	tt0077416	The Deer Hunter	1978	[Drama, War]	3.05
-155	85815	8.2	tt0032976	Rebecca	1940	[Drama, Film-Noir, Mystery, Thriller]	2.17
-156	445613	8.2	tt0116282	Fargo	1996	[Crime, Drama, Thriller]	1.63
-157	461256	8.2	tt0117951	Trainspotting	1996	[Drama]	1.57
-158	211634	8.2	tt0031381	Gone with the Wind	1939	[Drama, History, Romance, War]	3.97
-159	104007	8.2	tt0046912	Dial M for Murder	1954	[Crime, Film-Noir, Thriller]	1.75
-160	118052	8.2	tt0061512	Cool Hand Luke	1967	[Drama]	2.1
-161	473993	8.2	tt0892769	How to Train Your Dragon	2010	[Animation, Adventure, Family, Fantasy]	1.63
-162	692823	8.1	tt0167404	The Sixth Sense	1999	[Drama, Mystery, Thriller]	1.78
-163	672127	8.1	tt0266543	Finding Nemo	2003	[Animation, Adventure, Comedy, Family]	1.67
-164	252654	8.2	tt0084787	The Thing	1982	[Horror, Sci-Fi]	1.82
-165	600564	8.1	tt0477348	No Country for Old Men	2007	[Crime, Drama, Thriller]	2.03
-166	417632	8.2	tt0758758	Into the Wild	2007	[Adventure, Biography, Drama]	2.47
-167	116458	8.2	tt0978762	Mary and Max	2009	[Animation, Comedy, Drama]	1.53
-168	552389	8.1	tt2267998	Gone Girl	2014	[Crime, Drama, Mystery, Thriller]	2.48
-169	63526	8.2	tt0025316	It Happened One Night	1934	[Comedy, Romance]	1.75
-170	721989	8.1	tt0266697	Kill Bill: Vol. 1	2003	[Action]	1.85
-171	304534	8.1	tt1979320	Rush	2013	[Action, Biography, Drama, Sport]	2.05
-172	267548	8.1	tt0079470	Life of Brian	1979	[Comedy]	1.57
-173	397711	8.2	tt1431045	Deadpool	2016	[Action, Adventure, Comedy, Sci-Fi]	1.8
-174	366150	8.1	tt0469494	There Will Be Blood	2007	[Drama]	2.63
-175	260258	8.1	tt0395169	Hotel Rwanda	2004	[Drama, History, War]	2.02
-176	286743	8.1	tt0091763	Platoon	1986	[Drama, War]	2.0
-177	111169	8.1	tt0033870	The Maltese Falcon	1941	[Crime, Drama, Film-Noir, Mystery]	1.67
-178	522750	8.1	tt1392190	Mad Max: Fury Road	2015	[Action, Adventure, Sci-Fi, Thriller]	2.0
-179	34672	8.2	tt0046268	The Wages of Fear	1953	[Adventure, Drama, Thriller]	2.18
-180	165727	8.1	tt1895587	Spotlight	2015	[Biography, Drama, History]	2.13
-181	101317	8.1	tt0074958	Network	1976	[Drama]	2.02
-182	149213	8.1	tt0064115	Butch Cassidy and the Sundance Kid	1969	[Biography, Crime, Drama, Western]	1.83
-183	68738	8.1	tt0053198	The 400 Blows	1959	[Crime, Drama]	1.65
-184	266359	8.1	tt0092005	Stand by Me	1986	[Adventure, Drama]	1.48
-185	767289	8.1	tt1130884	Shutter Island	2010	[Mystery, Thriller]	2.3
-186	107245	8.1	tt0107207	In the Name of the Father	1993	[Biography, Drama, History]	2.22
-187	60009	8.1	tt0060827	Persona	1966	[Drama, Horror, Thriller]	1.38
-188	427175	8.1	tt2024544	12 Years a Slave	2013	[Biography, Drama, History]	2.23
-189	459988	8.1	tt2278388	The Grand Budapest Hotel	2014	[Adventure, Comedy, Drama, Romance]	1.65
-190	170883	8.1	tt0245712	Amores Perros	2000	[Drama, Thriller]	2.57
-191	288980	8.1	tt0093779	The Princess Bride	1987	[Adventure, Comedy, Family, Fantasy, Romance]	1.63
-192	473590	8.1	tt0405159	Million Dollar Baby	2004	[Drama, Sport]	2.2
-193	157111	8.1	tt0052618	Ben-Hur	1959	[Adventure, Drama, History, War]	3.53
-194	71593	8.1	tt0052311	Touch of Evil	1958	[Crime, Film-Noir, Thriller]	1.8
-195	83810	8.1	tt3011894	Wild Tales	2014	[Comedy, Drama, Thriller]	2.03
-196	361402	8.1	tt1663202	The Revenant	2015	[Adventure, Drama, Thriller, Western]	2.6
-197	149801	8.1	tt1028532	Hachi: A Dog's Tale	2009	[Drama, Family]	1.55
-198	188966	8.1	tt0075686	Annie Hall	1977	[Comedy, Romance]	1.55
-199	61851	8.1	tt0032551	The Grapes of Wrath	1940	[Drama]	2.15
-200	93818	8.1	tt0087544	Nausicaä of the Valley of the Wind	1984	[Animation, Adventure, Fantasy, Sci-Fi]	1.58
-201	598166	8.1	tt0107290	Jurassic Park	1993	[Adventure, Sci-Fi, Thriller]	2.12
-202	66840	8.1	tt0079944	Stalker	1979	[Drama, Mystery, Sci-Fi]	2.72
-203	41175	8.1	tt0046911	Diabolique	1955	[Drama, Horror, Mystery, Thriller]	1.93
-204	168485	8.1	tt0083987	Gandhi	1982	[Biography, Drama, History]	3.18
-205	478766	8.1	tt0440963	The Bourne Ultimatum	2007	[Action, Thriller]	1.92
-206	178851	8.1	tt0112471	Before Sunrise	1995	[Drama, Romance]	1.75
-207	570749	8.1	tt0246578	Donnie Darko	2001	[Drama, Sci-Fi, Thriller]	1.88
-208	77098	8.1	tt0056801	8½	1963	[Drama, Fantasy]	2.3
-209	653658	8.1	tt0120382	The Truman Show	1998	[Drama]	1.72
-210	64593	8.1	tt0353969	Memories of Murder	2003	[Crime, Drama, Mystery, Thriller]	2.2
-211	366850	8.1	tt0075148	Rocky	1976	[Drama, Sport]	2.0
-212	286657	8.1	tt0032138	The Wizard of Oz	1939	[Adventure, Family, Fantasy, Musical]	1.7
-213	25245	8.2	tt0041546	Kind Hearts and Coronets	1949	[Comedy, Crime]	1.77
-214	588843	8.1	tt0088247	The Terminator	1984	[Action, Sci-Fi]	1.78
-215	570748	8.1	tt0198781	Monsters, Inc.	2001	[Animation, Adventure, Comedy, Family, Fantasy]	1.53
-216	39618	8.1	tt0036868	The Best Years of Our Lives	1946	[Drama, Romance, War]	2.87
-217	529973	8.1	tt1201607	Harry Potter and the Deathly Hallows: Part 2	2011	[Adventure, Drama, Fantasy, Mystery]	2.17
-218	454885	8.1	tt0114746	Twelve Monkeys	1995	[Mystery, Sci-Fi, Thriller]	2.15
-219	428741	8.1	tt0107048	Groundhog Day	1993	[Comedy, Fantasy, Romance]	1.68
-220	647911	8.1	tt0401792	Sin City	2005	[Crime, Thriller]	2.45
-221	94318	8.1	tt0044079	Strangers on a Train	1951	[Crime, Film-Noir, Thriller]	1.68
-222	90204	8.1	tt0338564	Infernal Affairs	2002	[Crime, Mystery, Thriller]	1.68
-223	404120	8.0	tt0073195	Jaws	1975	[Adventure, Horror, Thriller]	2.07
-224	101335	8.1	tt0113247	La Haine	1995	[Crime, Drama]	1.63
-225	36331	8.1	tt0058946	The Battle of Algiers	1966	[Drama, War]	2.02
-226	99387	8.1	tt0072684	Barry Lyndon	1975	[Adventure, Drama, History, War]	3.07
-227	372910	8.1	tt1392214	Prisoners	2013	[Crime, Drama, Mystery, Thriller]	2.55
-228	179344	8.0	tt0072890	Dog Day Afternoon	1975	[Crime, Drama]	2.08
-229	432774	8.1	tt3659388	The Martian	2015	[Adventure, Drama, Sci-Fi]	2.4
-230	163128	8.1	tt1220719	Ip Man	2008	[Action, Biography, Drama, Sport]	1.77
-231	42465	8.1	tt0083922	Fanny and Alexander	1982	[Drama]	3.13
-232	447350	8.1	tt2084970	The Imitation Game	2014	[Biography, Drama, Thriller, War]	1.9
-233	795043	8.1	tt0325980	Pirates of the Caribbean: The Curse of the Black Pearl	2003	[Action, Adventure, Fantasy]	2.38
-234	509035	8.0	tt0264464	Catch Me If You Can	2002	[Biography, Crime, Drama]	2.35
-235	974636	8.1	tt0848228	The Avengers	2012	[Action, Adventure, Sci-Fi]	2.38
-236	657833	8.1	tt2015381	Guardians of the Galaxy	2014	[Action, Adventure, Sci-Fi]	2.02
-237	312891	8.1	tt1454029	The Help	2011	[Drama]	2.43
-238	493518	8.0	tt1504320	The King's Speech	2010	[Biography, Drama, History]	1.97
-239	143646	8.0	tt0058461	A Fistful of Dollars	1964	[Action, Drama, Western]	1.65
-240	96723	8.1	tt0092067	Castle in the Sky	1986	[Animation, Adventure, Family, Fantasy]	2.08
-241	98431	8.1	tt0046250	Roman Holiday	1953	[Comedy, Romance]	1.97
-242	30825	8.1	tt0050613	Throne of Blood	1957	[Drama]	1.83
-243	78871	8.1	tt0044706	High Noon	1952	[Western]	1.42
-244	302225	8.0	tt0101414	Beauty and the Beast	1991	[Animation, Family, Fantasy, Musical, Romance]	1.4
-245	73921	8.1	tt0118694	In the Mood for Love	2000	[Drama, Romance]	1.63
-246	68484	8.2	tt0169102	Lagaan: Once Upon a Time in India	2001	[Adventure, Drama, Musical, Romance, Sport]	3.73
-247	43102	8.3	tt1954470	Gangs of Wasseypur	2012	[Action, Crime, Drama, Thriller]	5.33
-248	48507	8.1	tt0087884	Paris, Texas	1984	[Drama]	2.45
-249	165592	8.0	tt0381681	Before Sunset	2004	[Drama, Romance]	1.33
+0	1659063	9.3	tt0111161	The Shawshank Redemption	1994	[Crime, Drama]	2.37
+1	1135585	9.2	tt0068646	The Godfather	1972	[Crime, Drama]	2.92
+2	775548	9.0	tt0071562	The Godfather: Part II	1974	[Crime, Drama]	3.37
+3	1644778	9.0	tt0468569	The Dark Knight	2008	[Action, Crime, Thriller]	2.53
+4	848733	8.9	tt0108052	Schindler's List	1993	[Biography, Drama, History]	3.25
+5	437587	8.9	tt0050083	12 Angry Men	1957	[Crime, Drama]	1.6
+6	1300255	8.9	tt0110912	Pulp Fiction	1994	[Crime, Drama]	2.57
+7	1193916	8.9	tt0167260	The Lord of the Rings: The Return of the King	2003	[Adventure, Drama, Fantasy]	3.35
+8	494563	8.9	tt0060196	The Good, the Bad and the Ugly	1966	[Western]	2.68
+9	1320910	8.9	tt0137523	Fight Club	1999	[Drama]	2.32
+10	1217378	8.8	tt0120737	The Lord of the Rings: The Fellowship of the Ring	2001	[Adventure, Drama, Fantasy]	2.97
+11	820703	8.8	tt0080684	Star Wars: Episode V - The Empire Strikes Back	1980	[Action, Adventure, Fantasy, Sci-Fi]	2.07
+12	1224080	8.8	tt0109830	Forrest Gump	1994	[Drama, Romance]	2.37
+13	1438336	8.8	tt1375666	Inception	2010	[Action, Mystery, Sci-Fi, Thriller]	2.47
+14	1080091	8.7	tt0167261	The Lord of the Rings: The Two Towers	2002	[Action, Adventure, Drama, Fantasy]	2.98
+15	668270	8.7	tt0073486	One Flew Over the Cuckoo's Nest	1975	[Drama]	2.22
+16	715189	8.7	tt0099685	Goodfellas	1990	[Biography, Crime, Drama]	2.43
+17	1195480	8.7	tt0133093	The Matrix	1999	[Action, Sci-Fi]	2.27
+18	225282	8.7	tt0047478	Seven Samurai	1954	[Action, Adventure, Drama]	2.63
+19	894315	8.7	tt0076759	Star Wars	1977	[Action, Adventure, Fantasy, Sci-Fi]	2.02
+20	524339	8.7	tt0317248	City of God	2002	[Crime, Drama]	2.17
+21	1003484	8.6	tt0114369	Se7en	1995	[Crime, Drama, Mystery, Thriller]	2.12
+22	868753	8.6	tt0102926	The Silence of the Lambs	1991	[Crime, Drama, Thriller]	1.97
+23	270908	8.6	tt0038650	It's a Wonderful Life	1946	[Drama, Family, Fantasy, Romance]	2.17
+24	727520	8.6	tt0114814	The Usual Suspects	1995	[Crime, Drama, Mystery, Thriller]	1.77
+25	410599	8.6	tt0118799	Life Is Beautiful	1997	[Comedy, Drama, Romance, War]	1.93
+26	711456	8.6	tt0110413	Léon: The Professional	1994	[Crime, Drama, Thriller]	1.83
+27	212116	8.6	tt0064116	Once Upon a Time in the West	1968	[Western]	2.42
+28	407734	8.6	tt0245429	Spirited Away	2001	[Animation, Adventure, Family, Fantasy]	2.08
+29	863923	8.6	tt0120815	Saving Private Ryan	1998	[Action, Drama, War]	2.82
+30	769327	8.6	tt0120586	American History X	1998	[Crime, Drama]	1.68
+31	897895	8.6	tt0816692	Interstellar	2014	[Adventure, Drama, Sci-Fi]	2.82
+32	381457	8.6	tt0034583	Casablanca	1942	[Drama, Romance, War]	1.7
+33	414037	8.5	tt0054215	Psycho	1960	[Horror, Mystery, Thriller]	1.82
+34	105680	8.6	tt0021749	City Lights	1931	[Comedy, Drama, Romance]	1.45
+35	649588	8.5	tt0082971	Raiders of the Lost Ark	1981	[Action, Adventure]	1.92
+36	490196	8.6	tt1675434	The Intouchables	2011	[Biography, Comedy, Drama]	1.87
+37	310294	8.5	tt0047396	Rear Window	1954	[Mystery, Thriller]	1.87
+38	139596	8.6	tt0027977	Modern Times	1936	[Comedy, Drama]	1.45
+39	765703	8.5	tt0120689	The Green Mile	1999	[Crime, Drama, Fantasy, Mystery]	3.15
+40	731853	8.5	tt0103064	Terminator 2: Judgment Day	1991	[Action, Sci-Fi]	2.55
+41	487832	8.5	tt0253474	The Pianist	2002	[Biography, Drama, War]	2.5
+42	856915	8.5	tt0407887	The Departed	2006	[Crime, Drama, Thriller]	2.52
+43	716361	8.5	tt0088763	Back to the Future	1985	[Adventure, Comedy, Sci-Fi]	1.93
+44	381307	8.5	tt2582802	Whiplash	2014	[Drama, Music]	1.78
+45	964711	8.5	tt0172495	Gladiator	2000	[Action, Drama]	2.58
+46	830819	8.5	tt0209144	Memento	2000	[Mystery, Thriller]	1.88
+47	443537	8.5	tt0078788	Apocalypse Now	1979	[Drama, War]	2.55
+48	826069	8.5	tt0482571	The Prestige	2006	[Drama, Mystery, Sci-Fi, Thriller]	2.17
+49	629425	8.5	tt0110357	The Lion King	1994	[Animation, Adventure, Drama, Family, Musical]	1.48
+50	336899	8.5	tt0057012	Dr. Strangelove or: How I Learned to Stop Worrying and Love the Bomb	1964	[Comedy]	1.58
+51	136962	8.5	tt0043014	Sunset Blvd.	1950	[Drama, Film-Noir]	1.83
+52	553207	8.5	tt0078748	Alien	1979	[Horror, Sci-Fi]	1.95
+53	134387	8.5	tt0032553	The Great Dictator	1940	[Comedy, Drama, War]	2.08
+54	254930	8.5	tt0405094	The Lives of Others	2006	[Drama, Thriller]	2.28
+55	149065	8.5	tt0095765	Cinema Paradiso	1988	[Drama]	2.58
+56	933118	8.5	tt1853728	Django Unchained	2012	[Drama, Western]	2.75
+57	597743	8.4	tt0081505	The Shining	1980	[Drama, Horror]	2.4
+58	118513	8.5	tt0050825	Paths of Glory	1957	[Drama, War]	1.47
+59	134464	8.5	tt0095327	Grave of the Fireflies	1988	[Animation, Drama, War]	1.48
+60	702146	8.4	tt0910970	WALL·E	2008	[Animation, Adventure, Family, Sci-Fi]	1.63
+61	1122498	8.5	tt1345836	The Dark Knight Rises	2012	[Action, Thriller]	2.73
+62	808723	8.4	tt0169547	American Beauty	1999	[Drama]	2.03
+63	480506	8.4	tt0090605	Aliens	1986	[Action, Horror, Sci-Fi]	2.57
+64	216679	8.4	tt0119698	Princess Mononoke	1997	[Animation, Adventure, Fantasy]	2.23
+65	348668	8.4	tt0364569	Oldboy	2003	[Drama, Mystery, Thriller]	2.0
+66	293295	8.4	tt0033467	Citizen Kane	1941	[Drama, Mystery]	1.98
+67	216925	8.4	tt0053125	North by Northwest	1959	[Adventure, Crime, Mystery, Thriller]	2.27
+68	216945	8.4	tt0087843	Once Upon a Time in America	1984	[Crime, Drama]	2.32
+69	165557	8.4	tt0082096	Das Boot	1981	[Adventure, Drama, Thriller, War]	3.98
+70	243748	8.4	tt0052357	Vertigo	1958	[Mystery, Romance, Thriller]	2.15
+71	667243	8.4	tt0086190	Star Wars: Episode VI - Return of the Jedi	1983	[Action, Adventure, Fantasy, Sci-Fi]	2.18
+72	61390	8.4	tt0051201	Witness for the Prosecution	1957	[Crime, Drama, Mystery, Thriller]	1.93
+73	97348	8.4	tt0022100	M	1931	[Crime, Drama, Mystery, Thriller]	1.65
+74	651603	8.4	tt0105236	Reservoir Dogs	1992	[Crime, Drama, Thriller]	1.65
+75	524828	8.4	tt0211915	Amélie	2001	[Comedy, Romance]	2.03
+76	724261	8.4	tt0112573	Braveheart	1995	[Biography, Drama, History, War]	2.97
+77	563250	8.4	tt0180093	Requiem for a Dream	2000	[Drama]	1.7
+78	547237	8.4	tt0066921	A Clockwork Orange	1971	[Crime, Drama, Sci-Fi]	2.27
+79	496656	8.3	tt0075314	Taxi Driver	1976	[Crime, Drama]	1.88
+80	95736	8.4	tt0036775	Double Indemnity	1944	[Crime, Drama, Film-Noir, Mystery, Thriller]	1.78
+81	532357	8.3	tt0435761	Toy Story 3	2010	[Animation, Adventure, Comedy, Family, Fantasy]	1.72
+82	210725	8.4	tt0056592	To Kill a Mockingbird	1962	[Crime, Drama]	2.15
+83	189251	8.4	tt0056172	Lawrence of Arabia	1962	[Adventure, Biography, Drama, History, War]	3.78
+84	653798	8.3	tt0338013	Eternal Sunshine of the Spotless Mind	2004	[Drama, Romance, Sci-Fi]	1.8
+85	475438	8.3	tt0093058	Full Metal Jacket	1987	[Drama, War]	1.93
+86	265923	8.3	tt0086879	Amadeus	1984	[Biography, Drama, History, Music]	2.67
+87	172366	8.3	tt0070735	The Sting	1973	[Comedy, Crime, Drama]	2.15
+88	418810	8.3	tt0062622	2001: A Space Odyssey	1968	[Adventure, Mystery, Sci-Fi]	2.48
+89	92412	8.3	tt0040522	Bicycle Thieves	1948	[Drama]	1.48
+90	147281	8.3	tt0045152	Singin' in the Rain	1952	[Comedy, Musical, Romance]	1.72
+91	591258	8.3	tt0208092	Snatch.	2000	[Comedy, Crime]	1.7
+92	609126	8.3	tt0114709	Toy Story	1995	[Animation, Adventure, Comedy, Family, Fantasy]	1.35
+93	376079	8.3	tt0071853	Monty Python and the Holy Grail	1975	[Adventure, Comedy, Fantasy]	1.52
+94	865850	8.3	tt0361748	Inglourious Basterds	2009	[Adventure, Drama, War]	2.55
+95	65332	8.4	tt0012349	The Kid	1921	[Comedy, Drama, Family]	1.13
+96	408015	8.3	tt0119488	L.A. Confidential	1997	[Crime, Drama, Mystery, Thriller]	2.3
+97	153747	8.3	tt0059578	For a Few Dollars More	1965	[Western]	2.2
+98	107220	8.3	tt0053604	The Apartment	1960	[Comedy, Drama, Romance]	2.08
+99	100581	8.3	tt0042876	Rashomon	1950	[Crime, Drama]	1.47
+100	506023	8.3	tt0097576	Indiana Jones and the Last Crusade	1989	[Action, Adventure, Fantasy]	2.12
+101	527810	8.3	tt0086250	Scarface	1983	[Crime, Drama]	2.83
+102	148830	8.4	tt1832382	A Separation	2011	[Drama, Mystery]	2.05
+103	109771	8.3	tt0017136	Metropolis	1927	[Drama, Sci-Fi]	1.9
+104	81521	8.3	tt0042192	All About Eve	1950	[Drama]	2.3
+105	72606	8.3	tt0055630	Yojimbo	1961	[Drama]	1.83
+106	25391	8.5	tt0118849	Children of Heaven	1997	[Drama, Family]	1.48
+107	77802	8.3	tt0040897	The Treasure of the Sierra Madre	1948	[Adventure, Drama]	2.1
+108	961794	8.3	tt0372784	Batman Begins	2005	[Action, Adventure]	2.33
+109	164850	8.3	tt2106476	The Hunt	2012	[Drama]	1.92
+110	200468	8.4	tt1187043	3 Idiots	2009	[Comedy, Drama]	2.83
+111	172134	8.3	tt0053291	Some Like It Hot	1959	[Comedy, Crime, Romance]	2.0
+112	592359	8.3	tt0119217	Good Will Hunting	1997	[Drama]	2.1
+113	272798	8.3	tt0105695	Unforgiven	1992	[Western]	2.18
+114	649104	8.3	tt1049413	Up	2009	[Animation, Adventure, Comedy, Family]	1.6
+115	111755	8.3	tt0041959	The Third Man	1949	[Film-Noir, Mystery, Thriller]	1.55
+116	231448	8.3	tt0081398	Raging Bull	1980	[Biography, Drama, Sport]	2.15
+117	319675	8.3	tt2096673	Inside Out	2015	[Animation, Adventure, Comedy, Drama, Family, Fantasy]	1.58
+118	244593	8.3	tt0363163	Downfall	2004	[Biography, Drama, History, War]	2.6
+119	582859	8.2	tt0095016	Die Hard	1988	[Action, Thriller]	2.18
+120	162720	8.3	tt0057115	The Great Escape	1963	[Adventure, Drama, History, Thriller, War]	2.87
+121	212518	8.2	tt0071315	Chinatown	1974	[Drama, Mystery, Thriller]	2.17
+122	207961	8.3	tt3498820	Captain America: Civil War	2016	[Action, Adventure, Sci-Fi, Thriller]	2.45
+123	424768	8.2	tt0113277	Heat	1995	[Action, Drama, Thriller]	2.83
+124	137223	8.3	tt3170832	Room	2015	[Drama]	1.97
+125	459470	8.2	tt0457430	Pan's Labyrinth	2006	[Drama, Fantasy, War]	1.97
+126	98895	8.3	tt0047296	On the Waterfront	1954	[Crime, Drama, Romance]	1.8
+127	167297	8.3	tt0096283	My Neighbor Totoro	1988	[Animation, Family, Fantasy]	1.43
+128	76290	8.3	tt0089881	Ran	1985	[Action, Drama]	2.7
+129	41257	8.3	tt0044741	Ikiru	1952	[Drama]	2.38
+130	76062	8.3	tt0031679	Mr. Smith Goes to Washington	1939	[Comedy, Drama]	2.15
+131	146454	8.2	tt0050212	The Bridge on the River Kwai	1957	[Adventure, Drama, War]	2.68
+132	66366	8.3	tt0015864	The Gold Rush	1925	[Adventure, Comedy, Drama]	1.2
+133	532275	8.3	tt2488496	Star Wars: Episode VII - The Force Awakens	2015	[Action, Fantasy, Sci-Fi, Thriller]	2.27
+134	128342	8.2	tt1305806	The Secret in Their Eyes	2009	[Drama, Mystery, Thriller]	2.15
+135	109760	8.2	tt0050976	The Seventh Seal	1957	[Drama, Fantasy]	1.6
+136	28415	8.3	tt0018455	Sunrise	1927	[Drama, Romance]	1.57
+137	454551	8.2	tt0083658	Blade Runner	1982	[Sci-Fi, Thriller]	1.95
+138	408695	8.2	tt0120735	Lock, Stock and Two Smoking Barrels	1998	[Comedy, Crime]	1.78
+139	25080	8.3	tt0046438	Tokyo Story	1953	[Drama]	2.27
+140	208914	8.2	tt0347149	Howl's Moving Castle	2004	[Animation, Adventure, Family, Fantasy]	1.98
+141	327340	8.2	tt0112641	Casino	1995	[Biography, Crime, Drama]	2.97
+142	52431	8.2	tt0017925	The General	1926	[Action, Adventure, Comedy, Drama, War]	1.25
+143	61961	8.2	tt0050986	Wild Strawberries	1957	[Drama, Romance]	1.52
+144	27346	8.5	tt0074896	The Message	1976	[Adventure, Biography, Drama, History, War]	2.95
+145	159378	8.2	tt0080678	The Elephant Man	1980	[Biography, Drama]	2.07
+146	325974	8.2	tt1291584	Warrior	2011	[Drama, Sport]	2.33
+147	757694	8.2	tt0993846	The Wolf of Wall Street	2013	[Biography, Comedy, Crime, Drama]	3.0
+148	597525	8.2	tt0268978	A Beautiful Mind	2001	[Biography, Drama]	2.25
+149	43324	8.3	tt0055031	Judgment at Nuremberg	1961	[Drama, War]	3.1
+150	777473	8.2	tt0434409	V for Vendetta	2005	[Action, Drama, Thriller]	2.2
+151	97806	8.3	tt2948356	Zootopia	2016	[Animation, Action, Adventure, Comedy, Crime, Family]	1.8
+152	553299	8.2	tt1205489	Gran Torino	2008	[Drama]	1.93
+153	527290	8.2	tt0118715	The Big Lebowski	1998	[Comedy, Crime]	1.95
+154	78026	8.2	tt1255953	Incendies	2010	[Drama, Mystery, War]	2.32
+155	228780	8.2	tt0077416	The Deer Hunter	1978	[Drama, War]	3.05
+156	85858	8.2	tt0032976	Rebecca	1940	[Drama, Film-Noir, Mystery, Thriller]	2.17
+157	445904	8.2	tt0116282	Fargo	1996	[Crime, Drama, Thriller]	1.63
+158	461503	8.2	tt0117951	Trainspotting	1996	[Drama]	1.57
+159	211747	8.2	tt0031381	Gone with the Wind	1939	[Drama, History, Romance, War]	3.97
+160	104078	8.2	tt0046912	Dial M for Murder	1954	[Crime, Film-Noir, Thriller]	1.75
+161	118094	8.2	tt0061512	Cool Hand Luke	1967	[Drama]	2.1
+162	474350	8.2	tt0892769	How to Train Your Dragon	2010	[Animation, Adventure, Family, Fantasy]	1.63
+163	693154	8.1	tt0167404	The Sixth Sense	1999	[Drama, Mystery, Thriller]	1.78
+164	672613	8.1	tt0266543	Finding Nemo	2003	[Animation, Adventure, Comedy, Family]	1.67
+165	252799	8.1	tt0084787	The Thing	1982	[Horror, Sci-Fi]	1.82
+166	600923	8.1	tt0477348	No Country for Old Men	2007	[Crime, Drama, Thriller]	2.03
+167	417927	8.2	tt0758758	Into the Wild	2007	[Adventure, Biography, Drama]	2.47
+168	116538	8.2	tt0978762	Mary and Max	2009	[Animation, Comedy, Drama]	1.53
+169	552963	8.1	tt2267998	Gone Girl	2014	[Crime, Drama, Mystery, Thriller]	2.48
+170	722395	8.1	tt0266697	Kill Bill: Vol. 1	2003	[Action]	1.85
+171	63568	8.2	tt0025316	It Happened One Night	1934	[Comedy, Romance]	1.75
+172	304769	8.1	tt1979320	Rush	2013	[Action, Biography, Drama, Sport]	2.05
+173	267692	8.1	tt0079470	Life of Brian	1979	[Comedy]	1.57
+174	366343	8.1	tt0469494	There Will Be Blood	2007	[Drama]	2.63
+175	260405	8.1	tt0395169	Hotel Rwanda	2004	[Drama, History, War]	2.02
+176	286885	8.1	tt0091763	Platoon	1986	[Drama, War]	2.0
+177	401285	8.2	tt1431045	Deadpool	2016	[Action, Adventure, Comedy, Sci-Fi]	1.8
+178	111226	8.1	tt0033870	The Maltese Falcon	1941	[Crime, Drama, Film-Noir, Mystery]	1.67
+179	523767	8.1	tt1392190	Mad Max: Fury Road	2015	[Action, Adventure, Sci-Fi, Thriller]	2.0
+180	34694	8.2	tt0046268	The Wages of Fear	1953	[Adventure, Drama, Thriller]	2.18
+181	166733	8.1	tt1895587	Spotlight	2015	[Biography, Drama, History]	2.13
+182	101382	8.1	tt0074958	Network	1976	[Drama]	2.02
+183	149310	8.1	tt0064115	Butch Cassidy and the Sundance Kid	1969	[Biography, Crime, Drama, Western]	1.83
+184	68779	8.1	tt0053198	The 400 Blows	1959	[Crime, Drama]	1.65
+185	767823	8.1	tt1130884	Shutter Island	2010	[Mystery, Thriller]	2.3
+186	266490	8.1	tt0092005	Stand by Me	1986	[Adventure, Drama]	1.48
+187	107319	8.1	tt0107207	In the Name of the Father	1993	[Biography, Drama, History]	2.22
+188	60065	8.1	tt0060827	Persona	1966	[Drama, Horror, Thriller]	1.38
+189	427543	8.1	tt2024544	12 Years a Slave	2013	[Biography, Drama, History]	2.23
+190	460452	8.1	tt2278388	The Grand Budapest Hotel	2014	[Adventure, Comedy, Drama, Romance]	1.65
+191	170962	8.1	tt0245712	Amores Perros	2000	[Drama, Thriller]	2.57
+192	289145	8.1	tt0093779	The Princess Bride	1987	[Adventure, Comedy, Family, Fantasy, Romance]	1.63
+193	473875	8.1	tt0405159	Million Dollar Baby	2004	[Drama, Sport]	2.2
+194	157201	8.1	tt0052618	Ben-Hur	1959	[Adventure, Drama, History, War]	3.53
+195	83997	8.1	tt3011894	Wild Tales	2014	[Comedy, Drama, Thriller]	2.03
+196	71637	8.1	tt0052311	Touch of Evil	1958	[Crime, Film-Noir, Thriller]	1.8
+197	149975	8.1	tt1028532	Hachi: A Dog's Tale	2009	[Drama, Family]	1.55
+198	189092	8.1	tt0075686	Annie Hall	1977	[Comedy, Romance]	1.55
+199	61879	8.1	tt0032551	The Grapes of Wrath	1940	[Drama]	2.15
+200	363274	8.1	tt1663202	The Revenant	2015	[Adventure, Drama, Thriller, Western]	2.6
+201	93912	8.1	tt0087544	Nausicaä of the Valley of the Wind	1984	[Animation, Adventure, Fantasy, Sci-Fi]	1.58
+202	598658	8.1	tt0107290	Jurassic Park	1993	[Adventure, Sci-Fi, Thriller]	2.12
+203	66890	8.1	tt0079944	Stalker	1979	[Drama, Mystery, Sci-Fi]	2.72
+204	41198	8.1	tt0046911	Diabolique	1955	[Drama, Horror, Mystery, Thriller]	1.93
+205	168571	8.1	tt0083987	Gandhi	1982	[Biography, Drama, History]	3.18
+206	479037	8.1	tt0440963	The Bourne Ultimatum	2007	[Action, Thriller]	1.92
+207	178988	8.1	tt0112471	Before Sunrise	1995	[Drama, Romance]	1.75
+208	571053	8.1	tt0246578	Donnie Darko	2001	[Drama, Sci-Fi, Thriller]	1.88
+209	77148	8.1	tt0056801	8½	1963	[Drama, Fantasy]	2.3
+210	654136	8.1	tt0120382	The Truman Show	1998	[Drama]	1.72
+211	64663	8.1	tt0353969	Memories of Murder	2003	[Crime, Drama, Mystery, Thriller]	2.2
+212	367116	8.1	tt0075148	Rocky	1976	[Drama, Sport]	2.0
+213	286815	8.1	tt0032138	The Wizard of Oz	1939	[Adventure, Family, Fantasy, Musical]	1.7
+214	589215	8.1	tt0088247	The Terminator	1984	[Action, Sci-Fi]	1.78
+215	25288	8.2	tt0041546	Kind Hearts and Coronets	1949	[Comedy, Crime]	1.77
+216	571168	8.1	tt0198781	Monsters, Inc.	2001	[Animation, Adventure, Comedy, Family, Fantasy]	1.53
+217	39643	8.1	tt0036868	The Best Years of Our Lives	1946	[Drama, Romance, War]	2.87
+218	530375	8.1	tt1201607	Harry Potter and the Deathly Hallows: Part 2	2011	[Adventure, Drama, Fantasy, Mystery]	2.17
+219	455143	8.1	tt0114746	Twelve Monkeys	1995	[Mystery, Sci-Fi, Thriller]	2.15
+220	429048	8.1	tt0107048	Groundhog Day	1993	[Comedy, Fantasy, Romance]	1.68
+221	648196	8.1	tt0401792	Sin City	2005	[Crime, Thriller]	2.45
+222	94378	8.1	tt0044079	Strangers on a Train	1951	[Crime, Film-Noir, Thriller]	1.68
+223	90262	8.1	tt0338564	Infernal Affairs	2002	[Crime, Mystery, Thriller]	1.68
+224	404348	8.0	tt0073195	Jaws	1975	[Adventure, Horror, Thriller]	2.07
+225	101388	8.1	tt0113247	La Haine	1995	[Crime, Drama]	1.63
+226	36355	8.1	tt0058946	The Battle of Algiers	1966	[Drama, War]	2.02
+227	99450	8.1	tt0072684	Barry Lyndon	1975	[Adventure, Drama, History, War]	3.07
+228	373242	8.1	tt1392214	Prisoners	2013	[Crime, Drama, Mystery, Thriller]	2.55
+229	179456	8.0	tt0072890	Dog Day Afternoon	1975	[Crime, Drama]	2.08
+230	433995	8.1	tt3659388	The Martian	2015	[Adventure, Drama, Sci-Fi]	2.4
+231	163278	8.1	tt1220719	Ip Man	2008	[Action, Biography, Drama, Sport]	1.77
+232	447938	8.1	tt2084970	The Imitation Game	2014	[Biography, Drama, Thriller, War]	1.9
+233	42493	8.1	tt0083922	Fanny and Alexander	1982	[Drama]	3.13
+234	509544	8.0	tt0264464	Catch Me If You Can	2002	[Biography, Crime, Drama]	2.35
+235	795513	8.1	tt0325980	Pirates of the Caribbean: The Curse of the Black Pearl	2003	[Action, Adventure, Fantasy]	2.38
+236	975372	8.1	tt0848228	The Avengers	2012	[Action, Adventure, Sci-Fi]	2.38
+237	658666	8.1	tt2015381	Guardians of the Galaxy	2014	[Action, Adventure, Sci-Fi]	2.02
+238	313066	8.1	tt1454029	The Help	2011	[Drama]	2.43
+239	493848	8.0	tt1504320	The King's Speech	2010	[Biography, Drama, History]	1.97
+240	143753	8.0	tt0058461	A Fistful of Dollars	1964	[Action, Drama, Western]	1.65
+241	96805	8.1	tt0092067	Castle in the Sky	1986	[Animation, Adventure, Family, Fantasy]	2.08
+242	98497	8.1	tt0046250	Roman Holiday	1953	[Comedy, Romance]	1.97
+243	30857	8.1	tt0050613	Throne of Blood	1957	[Drama]	1.83
+244	78910	8.1	tt0044706	High Noon	1952	[Western]	1.42
+245	302475	8.0	tt0101414	Beauty and the Beast	1991	[Animation, Family, Fantasy, Musical, Romance]	1.4
+246	73987	8.1	tt0118694	In the Mood for Love	2000	[Drama, Romance]	1.63
+247	43183	8.3	tt1954470	Gangs of Wasseypur	2012	[Action, Crime, Drama, Thriller]	5.33
+248	68558	8.2	tt0169102	Lagaan: Once Upon a Time in India	2001	[Adventure, Drama, Musical, Romance, Sport]	3.73
+249	40150	8.1	tt0120731	The Legend of 1900	1998	[Drama, Music, Romance]	2.75
