@@ -1,0 +1,404 @@
+[fireplace.__init__]: Initializing card database
+[fireplace.__init__]: Merged 2253 cards
+[fireplace.entity]: Setting up game Game(players=(Player(name='Player1', hero=None), Player(name='Player2', hero=None)))
+[fireplace.entity]: Tossing the coin... Player2 wins!
+[fireplace.actions]: Player(name='Player1', hero=<Hero ('Valeera Sanguinar')>) triggering <TargetedAction: Summon(<Summon.CARD>=<HeroPower ('Dagger Mastery')>)> targeting [Player(name='Player1', hero=<Hero ('Valeera Sanguinar')>)]
+[fireplace.actions]: Player1 summons [<HeroPower ('Dagger Mastery')>]
+[fireplace.entity]: Empty stack, refreshing auras and processing deaths
+[fireplace.actions]: Player(name='Player1', hero=<Hero ('Valeera Sanguinar')>) triggering <TargetedAction: Summon(<Summon.CARD>=<Hero ('Valeera Sanguinar')>)> targeting [Player(name='Player1', hero=<Hero ('Valeera Sanguinar')>)]
+[fireplace.actions]: Player1 summons [<Hero ('Valeera Sanguinar')>]
+[fireplace.entity]: Empty stack, refreshing auras and processing deaths
+[fireplace.entity]: Player(name='Player1', hero=<Hero ('Valeera Sanguinar')>) shuffles their deck
+[fireplace.card]: <Minion ("Mukla's Champion")> moves from <Zone.DECK: 2> to <Zone.HAND: 3>
+[fireplace.card]: <Minion ('Scaled Nightmare')> moves from <Zone.DECK: 2> to <Zone.HAND: 3>
+[fireplace.card]: <Spell ('Journey Below')> moves from <Zone.DECK: 2> to <Zone.HAND: 3>
+[fireplace.card]: <Minion ('Violet Teacher')> moves from <Zone.DECK: 2> to <Zone.HAND: 3>
+[fireplace.actions]: Player(name='Player2', hero=<Hero ('Uther Lightbringer')>) triggering <TargetedAction: Summon(<Summon.CARD>=<HeroPower ('Reinforce')>)> targeting [Player(name='Player2', hero=<Hero ('Uther Lightbringer')>)]
+[fireplace.actions]: Player2 summons [<HeroPower ('Reinforce')>]
+[fireplace.entity]: Empty stack, refreshing auras and processing deaths
+[fireplace.actions]: Player(name='Player2', hero=<Hero ('Uther Lightbringer')>) triggering <TargetedAction: Summon(<Summon.CARD>=<Hero ('Uther Lightbringer')>)> targeting [Player(name='Player2', hero=<Hero ('Uther Lightbringer')>)]
+[fireplace.actions]: Player2 summons [<Hero ('Uther Lightbringer')>]
+[fireplace.entity]: Empty stack, refreshing auras and processing deaths
+[fireplace.entity]: Player(name='Player2', hero=<Hero ('Uther Lightbringer')>) shuffles their deck
+[fireplace.card]: <Minion ('Duskboar')> moves from <Zone.DECK: 2> to <Zone.HAND: 3>
+[fireplace.card]: <Minion ('Tirion Fordring')> moves from <Zone.DECK: 2> to <Zone.HAND: 3>
+[fireplace.card]: <Minion ('Spellbreaker')> moves from <Zone.DECK: 2> to <Zone.HAND: 3>
+[fireplace.entity]: Entering mulligan phase
+[fireplace.actions]: Player(name='Player1', hero=<Hero ('Valeera Sanguinar')>) triggering <TargetedAction: Draw()> targeting [Player(name='Player1', hero=<Hero ('Valeera Sanguinar')>)]
+[fireplace.entity]: Player1 draws <Minion ('Cyclopian Horror')>
+[fireplace.card]: <Minion ('Cyclopian Horror')> moves from <Zone.DECK: 2> to <Zone.HAND: 3>
+[fireplace.actions]: Player(name='Player1', hero=<Hero ('Valeera Sanguinar')>) triggering <TargetedAction: Draw()> targeting [Player(name='Player1', hero=<Hero ('Valeera Sanguinar')>)]
+[fireplace.entity]: Player1 draws <Minion ('Unearthed Raptor')>
+[fireplace.card]: <Minion ('Unearthed Raptor')> moves from <Zone.DECK: 2> to <Zone.HAND: 3>
+[fireplace.entity]: Empty stack, refreshing auras and processing deaths
+[fireplace.card]: <Minion ('Violet Teacher')> moves from <Zone.HAND: 3> to <Zone.DECK: 2>
+[fireplace.card]: <Minion ("Mukla's Champion")> moves from <Zone.HAND: 3> to <Zone.DECK: 2>
+[fireplace.entity]: Player(name='Player1', hero=<Hero ('Valeera Sanguinar')>) shuffles their deck
+[fireplace.actions]: Player(name='Player2', hero=<Hero ('Uther Lightbringer')>) triggering <TargetedAction: Draw()> targeting [Player(name='Player2', hero=<Hero ('Uther Lightbringer')>)]
+[fireplace.entity]: Player2 draws <Minion ('Ancient Brewmaster')>
+[fireplace.card]: <Minion ('Ancient Brewmaster')> moves from <Zone.DECK: 2> to <Zone.HAND: 3>
+[fireplace.actions]: Player(name='Player2', hero=<Hero ('Uther Lightbringer')>) triggering <TargetedAction: Draw()> targeting [Player(name='Player2', hero=<Hero ('Uther Lightbringer')>)]
+[fireplace.entity]: Player2 draws <Minion ('Brann Bronzebeard')>
+[fireplace.card]: <Minion ('Brann Bronzebeard')> moves from <Zone.DECK: 2> to <Zone.HAND: 3>
+[fireplace.actions]: Player(name='Player2', hero=<Hero ('Uther Lightbringer')>) triggering <TargetedAction: Draw()> targeting [Player(name='Player2', hero=<Hero ('Uther Lightbringer')>)]
+[fireplace.entity]: Player2 draws <Minion ('Hemet Nesingwary')>
+[fireplace.card]: <Minion ('Hemet Nesingwary')> moves from <Zone.DECK: 2> to <Zone.HAND: 3>
+[fireplace.entity]: Empty stack, refreshing auras and processing deaths
+[fireplace.card]: <Minion ('Duskboar')> moves from <Zone.HAND: 3> to <Zone.DECK: 2>
+[fireplace.card]: <Minion ('Tirion Fordring')> moves from <Zone.HAND: 3> to <Zone.DECK: 2>
+[fireplace.card]: <Minion ('Spellbreaker')> moves from <Zone.HAND: 3> to <Zone.DECK: 2>
+[fireplace.entity]: Player(name='Player2', hero=<Hero ('Uther Lightbringer')>) shuffles their deck
+[fireplace.entity]: Player1 gets The Coin (GAME_005)
+[fireplace.actions]: Player(name='Player1', hero=<Hero ('Valeera Sanguinar')>) triggering <TargetedAction: Give(<Give.CARD>='GAME_005')> targeting [Player(name='Player1', hero=<Hero ('Valeera Sanguinar')>)]
+[fireplace.actions]: Giving [<Spell ('The Coin')>] to Player1
+[fireplace.card]: <Spell ('The Coin')> moves from <Zone.SETASIDE: 6> to <Zone.HAND: 3>
+[fireplace.entity]: Empty stack, refreshing auras and processing deaths
+[fireplace.entity]: Player2 begins turn 1
+[fireplace.entity]: Player2 is now at 1 mana crystals
+[fireplace.actions]: Player(name='Player2', hero=<Hero ('Uther Lightbringer')>) triggering <TargetedAction: Draw()> targeting [Player(name='Player2', hero=<Hero ('Uther Lightbringer')>)]
+[fireplace.entity]: Player2 draws <Minion ('Wobbling Runts')>
+[fireplace.card]: <Minion ('Wobbling Runts')> moves from <Zone.DECK: 2> to <Zone.HAND: 3>
+[fireplace.entity]: Empty stack, refreshing auras and processing deaths
+[fireplace.entity]: Player2 ends turn 1
+[fireplace.entity]: Player1 begins turn 2
+[fireplace.entity]: Player1 is now at 1 mana crystals
+[fireplace.actions]: Player(name='Player1', hero=<Hero ('Valeera Sanguinar')>) triggering <TargetedAction: Draw()> targeting [Player(name='Player1', hero=<Hero ('Valeera Sanguinar')>)]
+[fireplace.entity]: Player1 draws <Minion ('Armored Warhorse')>
+[fireplace.card]: <Minion ('Armored Warhorse')> moves from <Zone.DECK: 2> to <Zone.HAND: 3>
+[fireplace.entity]: Empty stack, refreshing auras and processing deaths
+[fireplace.actions]: Player1 plays <Spell ('Journey Below')> (target=None, index=None)
+[fireplace.entity]: Player1 pays 1 mana
+[fireplace.card]: <Spell ('Journey Below')> moves from <Zone.HAND: 3> to <Zone.PLAY: 1>
+[fireplace.actions]: <Spell ('Journey Below')> triggering <TargetedAction: Battlecry(<Battlecry.TARGET>=None)> targeting [<Spell ('Journey Below')>]
+[fireplace.actions]: Activating <Spell ('Journey Below')> action targeting None
+[fireplace.entity]: Empty stack, refreshing auras and processing deaths
+[fireplace.entity]: Empty stack, refreshing auras and processing deaths
+[fireplace.entity]: Player1 ends turn 2
+[fireplace.entity]: Player2 begins turn 3
+[fireplace.entity]: Player2 is now at 2 mana crystals
+[fireplace.actions]: Player(name='Player2', hero=<Hero ('Uther Lightbringer')>) triggering <TargetedAction: Draw()> targeting [Player(name='Player2', hero=<Hero ('Uther Lightbringer')>)]
+[fireplace.entity]: Player2 draws <Minion ('Silithid Swarmer')>
+[fireplace.card]: <Minion ('Silithid Swarmer')> moves from <Zone.DECK: 2> to <Zone.HAND: 3>
+[fireplace.entity]: Empty stack, refreshing auras and processing deaths
+[fireplace.entity]: Player2 ends turn 3
+[fireplace.entity]: Player1 begins turn 4
+[fireplace.entity]: Player1 is now at 2 mana crystals
+[fireplace.actions]: Player(name='Player1', hero=<Hero ('Valeera Sanguinar')>) triggering <TargetedAction: Draw()> targeting [Player(name='Player1', hero=<Hero ('Valeera Sanguinar')>)]
+[fireplace.entity]: Player1 draws <Spell ('Preparation')>
+[fireplace.card]: <Spell ('Preparation')> moves from <Zone.DECK: 2> to <Zone.HAND: 3>
+[fireplace.entity]: Empty stack, refreshing auras and processing deaths
+[fireplace.entity]: Player1 ends turn 4
+[fireplace.entity]: Player2 begins turn 5
+[fireplace.entity]: Player2 is now at 3 mana crystals
+[fireplace.actions]: Player(name='Player2', hero=<Hero ('Uther Lightbringer')>) triggering <TargetedAction: Draw()> targeting [Player(name='Player2', hero=<Hero ('Uther Lightbringer')>)]
+[fireplace.entity]: Player2 draws <Minion ('Grand Crusader')>
+[fireplace.card]: <Minion ('Grand Crusader')> moves from <Zone.DECK: 2> to <Zone.HAND: 3>
+[fireplace.entity]: Empty stack, refreshing auras and processing deaths
+[fireplace.actions]: Player2 plays <Minion ('Silithid Swarmer')> (target=None, index=None)
+[fireplace.entity]: Player2 pays 3 mana
+[fireplace.card]: <Minion ('Silithid Swarmer')> moves from <Zone.HAND: 3> to <Zone.PLAY: 1>
+[fireplace.actions]: <Minion ('Silithid Swarmer')> triggering <TargetedAction: Battlecry(<Battlecry.TARGET>=None)> targeting [<Minion ('Silithid Swarmer')>]
+[fireplace.actions]: Activating <Minion ('Silithid Swarmer')> action targeting None
+[fireplace.entity]: Empty stack, refreshing auras and processing deaths
+[fireplace.aura]: Creating <AuraBuff <Minion ('Silithid Swarmer')> -> <Minion ('Silithid Swarmer')>>
+[fireplace.entity]: Empty stack, refreshing auras and processing deaths
+[fireplace.entity]: Player2 ends turn 5
+[fireplace.entity]: Player1 begins turn 6
+[fireplace.entity]: Player1 is now at 3 mana crystals
+[fireplace.actions]: Player(name='Player1', hero=<Hero ('Valeera Sanguinar')>) triggering <TargetedAction: Draw()> targeting [Player(name='Player1', hero=<Hero ('Valeera Sanguinar')>)]
+[fireplace.entity]: Player1 draws <Minion ('Bog Creeper')>
+[fireplace.card]: <Minion ('Bog Creeper')> moves from <Zone.DECK: 2> to <Zone.HAND: 3>
+[fireplace.entity]: Empty stack, refreshing auras and processing deaths
+[fireplace.actions]: Player1 plays <Spell ('The Coin')> (target=None, index=None)
+[fireplace.entity]: Player1 pays 0 mana
+[fireplace.card]: <Spell ('The Coin')> moves from <Zone.HAND: 3> to <Zone.PLAY: 1>
+[fireplace.actions]: <Spell ('The Coin')> triggering <TargetedAction: Battlecry(<Battlecry.TARGET>=None)> targeting [<Spell ('The Coin')>]
+[fireplace.actions]: Activating <Spell ('The Coin')> action targeting None
+[fireplace.actions]: <Spell ('The Coin')> triggering <TargetedAction: ManaThisTurn(<ManaThisTurn.AMOUNT>=1)> targeting [Player(name='Player1', hero=<Hero ('Valeera Sanguinar')>)]
+[fireplace.entity]: Empty stack, refreshing auras and processing deaths
+[fireplace.entity]: Empty stack, refreshing auras and processing deaths
+[fireplace.entity]: Player1 ends turn 6
+[fireplace.entity]: Player2 begins turn 7
+[fireplace.entity]: Player2 is now at 4 mana crystals
+[fireplace.actions]: Player(name='Player2', hero=<Hero ('Uther Lightbringer')>) triggering <TargetedAction: Draw()> targeting [Player(name='Player2', hero=<Hero ('Uther Lightbringer')>)]
+[fireplace.entity]: Player2 draws <Minion ('Argent Watchman')>
+[fireplace.card]: <Minion ('Argent Watchman')> moves from <Zone.DECK: 2> to <Zone.HAND: 3>
+[fireplace.entity]: Empty stack, refreshing auras and processing deaths
+[fireplace.actions]: Player2 plays <Minion ('Ancient Brewmaster')> (target=<Minion ('Silithid Swarmer')>, index=None)
+[fireplace.entity]: Player2 pays 4 mana
+[fireplace.card]: <Minion ('Ancient Brewmaster')> moves from <Zone.HAND: 3> to <Zone.PLAY: 1>
+[fireplace.actions]: <Minion ('Ancient Brewmaster')> triggering <TargetedAction: Battlecry(<Battlecry.TARGET>=<Minion ('Silithid Swarmer')>)> targeting [<Minion ('Ancient Brewmaster')>]
+[fireplace.actions]: Activating <Minion ('Ancient Brewmaster')> action targeting <Minion ('Silithid Swarmer')>
+[fireplace.actions]: <Minion ('Ancient Brewmaster')> triggering <TargetedAction: Bounce()> targeting [<Minion ('Silithid Swarmer')>]
+[fireplace.actions]: <Minion ('Silithid Swarmer')> is bounced back to Player2's hand
+[fireplace.entity]: <Minion ('Silithid Swarmer')> is removed from the field
+[fireplace.card]: <Minion ('Silithid Swarmer')> moves from <Zone.PLAY: 1> to <Zone.HAND: 3>
+[fireplace.entity]: Empty stack, refreshing auras and processing deaths
+[fireplace.aura]: Destroying <AuraBuff <Minion ('Silithid Swarmer')> -> <Minion ('Silithid Swarmer')>>
+[fireplace.entity]: Empty stack, refreshing auras and processing deaths
+[fireplace.entity]: Player2 ends turn 7
+[fireplace.entity]: Player1 begins turn 8
+[fireplace.entity]: Player1 is now at 4 mana crystals
+[fireplace.actions]: Player(name='Player1', hero=<Hero ('Valeera Sanguinar')>) triggering <TargetedAction: Draw()> targeting [Player(name='Player1', hero=<Hero ('Valeera Sanguinar')>)]
+[fireplace.entity]: Player1 draws <Minion ('Elite Tauren Chieftain')>
+[fireplace.card]: <Minion ('Elite Tauren Chieftain')> moves from <Zone.DECK: 2> to <Zone.HAND: 3>
+[fireplace.entity]: Empty stack, refreshing auras and processing deaths
+[fireplace.actions]: Player1 plays <Minion ('Armored Warhorse')> (target=None, index=None)
+[fireplace.entity]: Player1 pays 4 mana
+[fireplace.card]: <Minion ('Armored Warhorse')> moves from <Zone.HAND: 3> to <Zone.PLAY: 1>
+[fireplace.actions]: <Minion ('Armored Warhorse')> triggering <TargetedAction: Battlecry(<Battlecry.TARGET>=None)> targeting [<Minion ('Armored Warhorse')>]
+[fireplace.actions]: Activating <Minion ('Armored Warhorse')> action targeting None
+[fireplace.actions]: Jousting <Minion ('SI:7 Agent')> vs <Minion ('Tirion Fordring')>
+[fireplace.entity]: Empty stack, refreshing auras and processing deaths
+[fireplace.entity]: Empty stack, refreshing auras and processing deaths
+[fireplace.entity]: Player1 ends turn 8
+[fireplace.entity]: Player2 begins turn 9
+[fireplace.entity]: Player2 is now at 5 mana crystals
+[fireplace.actions]: Player(name='Player2', hero=<Hero ('Uther Lightbringer')>) triggering <TargetedAction: Draw()> targeting [Player(name='Player2', hero=<Hero ('Uther Lightbringer')>)]
+[fireplace.entity]: Player2 draws <Minion ('Spellbreaker')>
+[fireplace.card]: <Minion ('Spellbreaker')> moves from <Zone.DECK: 2> to <Zone.HAND: 3>
+[fireplace.entity]: Empty stack, refreshing auras and processing deaths
+[fireplace.actions]: Player2 plays <Minion ('Hemet Nesingwary')> (target=<Minion ('Armored Warhorse')>, index=None)
+[fireplace.entity]: Player2 pays 5 mana
+[fireplace.card]: <Minion ('Hemet Nesingwary')> moves from <Zone.HAND: 3> to <Zone.PLAY: 1>
+[fireplace.actions]: <Minion ('Hemet Nesingwary')> triggering <TargetedAction: Battlecry(<Battlecry.TARGET>=<Minion ('Armored Warhorse')>)> targeting [<Minion ('Hemet Nesingwary')>]
+[fireplace.actions]: Activating <Minion ('Hemet Nesingwary')> action targeting <Minion ('Armored Warhorse')>
+[fireplace.actions]: <Minion ('Hemet Nesingwary')> triggering <TargetedAction: Destroy()> targeting [<Minion ('Armored Warhorse')>]
+[fireplace.actions]: <Minion ('Hemet Nesingwary')> marks <Minion ('Armored Warhorse')> for imminent death
+[fireplace.entity]: Empty stack, refreshing auras and processing deaths
+[fireplace.entity]: <Minion ('Armored Warhorse')> is removed from the field
+[fireplace.card]: <Minion ('Armored Warhorse')> moves from <Zone.PLAY: 1> to <Zone.GRAVEYARD: 4>
+[fireplace.entity]: Empty stack, refreshing auras and processing deaths
+[fireplace.actions]: Processing Death for <Minion ('Armored Warhorse')>
+[fireplace.entity]: Empty stack, refreshing auras and processing deaths
+[fireplace.entity]: Empty stack, refreshing auras and processing deaths
+[fireplace.actions]: <Minion ('Ancient Brewmaster')> attacks <Hero ('Valeera Sanguinar')>
+[fireplace.actions]: <Minion ('Ancient Brewmaster')> triggering <TargetedAction: Hit(<Hit.AMOUNT>=5)> targeting [<Hero ('Valeera Sanguinar')>]
+[fireplace.actions]: <Minion ('Ancient Brewmaster')> triggering <TargetedAction: Predamage(<Predamage.AMOUNT>=5)> targeting [<Hero ('Valeera Sanguinar')>]
+[fireplace.actions]: <Minion ('Ancient Brewmaster')> triggering <TargetedAction: Damage()> targeting [<Hero ('Valeera Sanguinar')>]
+[fireplace.entity]: Empty stack, refreshing auras and processing deaths
+[fireplace.entity]: Player2 ends turn 9
+[fireplace.entity]: Player1 begins turn 10
+[fireplace.entity]: Player1 is now at 5 mana crystals
+[fireplace.actions]: Player(name='Player1', hero=<Hero ('Valeera Sanguinar')>) triggering <TargetedAction: Draw()> targeting [Player(name='Player1', hero=<Hero ('Valeera Sanguinar')>)]
+[fireplace.entity]: Player1 draws <Minion ('Frost Giant')>
+[fireplace.card]: <Minion ('Frost Giant')> moves from <Zone.DECK: 2> to <Zone.HAND: 3>
+[fireplace.entity]: Empty stack, refreshing auras and processing deaths
+[fireplace.actions]: Player1 plays <Spell ('Preparation')> (target=None, index=None)
+[fireplace.entity]: Player1 pays 0 mana
+[fireplace.card]: <Spell ('Preparation')> moves from <Zone.HAND: 3> to <Zone.PLAY: 1>
+[fireplace.actions]: <Spell ('Preparation')> triggering <TargetedAction: Battlecry(<Battlecry.TARGET>=None)> targeting [<Spell ('Preparation')>]
+[fireplace.actions]: Activating <Spell ('Preparation')> action targeting None
+[fireplace.actions]: <Spell ('Preparation')> triggering <TargetedAction: Buff(<Buff.BUFF>='EX1_145o')> targeting [Player(name='Player1', hero=<Hero ('Valeera Sanguinar')>)]
+[fireplace.entity]: Applying <Enchantment ('Preparation')> to Player(name='Player1', hero=<Hero ('Valeera Sanguinar')>)
+[fireplace.card]: <Enchantment ('Preparation')> moves from <Zone.SETASIDE: 6> to <Zone.PLAY: 1>
+[fireplace.entity]: Empty stack, refreshing auras and processing deaths
+[fireplace.entity]: Empty stack, refreshing auras and processing deaths
+[fireplace.entity]: Player1 ends turn 10
+[fireplace.entity]: Ending One-Turn effect: <Enchantment ('Preparation')>
+[fireplace.card]: <Enchantment ('Preparation')> moves from <Zone.PLAY: 1> to <Zone.REMOVEDFROMGAME: 5>
+[fireplace.entity]: Player2 begins turn 11
+[fireplace.entity]: Player2 is now at 6 mana crystals
+[fireplace.actions]: Player(name='Player2', hero=<Hero ('Uther Lightbringer')>) triggering <TargetedAction: Draw()> targeting [Player(name='Player2', hero=<Hero ('Uther Lightbringer')>)]
+[fireplace.entity]: Player2 draws <Minion ('Silver Hand Regent')>
+[fireplace.card]: <Minion ('Silver Hand Regent')> moves from <Zone.DECK: 2> to <Zone.HAND: 3>
+[fireplace.entity]: Empty stack, refreshing auras and processing deaths
+[fireplace.entity]: Player2 uses hero power <HeroPower ('Reinforce')> on None
+[fireplace.actions]: <HeroPower ('Reinforce')> triggering <TargetedAction: Summon(<Summon.CARD>='CS2_101t')> targeting [Player(name='Player2', hero=<Hero ('Uther Lightbringer')>)]
+[fireplace.actions]: Player2 summons [<Minion ('Silver Hand Recruit')>]
+[fireplace.card]: <Minion ('Silver Hand Recruit')> moves from <Zone.SETASIDE: 6> to <Zone.PLAY: 1>
+[fireplace.entity]: Empty stack, refreshing auras and processing deaths
+[fireplace.actions]: Player2 plays <Minion ('Brann Bronzebeard')> (target=None, index=None)
+[fireplace.entity]: Player2 pays 3 mana
+[fireplace.card]: <Minion ('Brann Bronzebeard')> moves from <Zone.HAND: 3> to <Zone.PLAY: 1>
+[fireplace.actions]: <Minion ('Brann Bronzebeard')> triggering <TargetedAction: Battlecry(<Battlecry.TARGET>=None)> targeting [<Minion ('Brann Bronzebeard')>]
+[fireplace.actions]: Activating <Minion ('Brann Bronzebeard')> action targeting None
+[fireplace.entity]: Empty stack, refreshing auras and processing deaths
+[fireplace.aura]: Creating <AuraBuff <Minion ('Brann Bronzebeard')> -> Player(name='Player2', hero=<Hero ('Uther Lightbringer')>)>
+[fireplace.entity]: Empty stack, refreshing auras and processing deaths
+[fireplace.actions]: <Minion ('Ancient Brewmaster')> attacks <Hero ('Valeera Sanguinar')>
+[fireplace.actions]: <Minion ('Ancient Brewmaster')> triggering <TargetedAction: Hit(<Hit.AMOUNT>=5)> targeting [<Hero ('Valeera Sanguinar')>]
+[fireplace.actions]: <Minion ('Ancient Brewmaster')> triggering <TargetedAction: Predamage(<Predamage.AMOUNT>=5)> targeting [<Hero ('Valeera Sanguinar')>]
+[fireplace.actions]: <Minion ('Ancient Brewmaster')> triggering <TargetedAction: Damage()> targeting [<Hero ('Valeera Sanguinar')>]
+[fireplace.entity]: Empty stack, refreshing auras and processing deaths
+[fireplace.actions]: <Minion ('Hemet Nesingwary')> attacks <Hero ('Valeera Sanguinar')>
+[fireplace.actions]: <Minion ('Hemet Nesingwary')> triggering <TargetedAction: Hit(<Hit.AMOUNT>=6)> targeting [<Hero ('Valeera Sanguinar')>]
+[fireplace.actions]: <Minion ('Hemet Nesingwary')> triggering <TargetedAction: Predamage(<Predamage.AMOUNT>=6)> targeting [<Hero ('Valeera Sanguinar')>]
+[fireplace.actions]: <Minion ('Hemet Nesingwary')> triggering <TargetedAction: Damage()> targeting [<Hero ('Valeera Sanguinar')>]
+[fireplace.entity]: Empty stack, refreshing auras and processing deaths
+[fireplace.entity]: Player2 ends turn 11
+[fireplace.entity]: Player1 begins turn 12
+[fireplace.entity]: Player1 is now at 6 mana crystals
+[fireplace.actions]: Player(name='Player1', hero=<Hero ('Valeera Sanguinar')>) triggering <TargetedAction: Draw()> targeting [Player(name='Player1', hero=<Hero ('Valeera Sanguinar')>)]
+[fireplace.entity]: Player1 draws <Minion ("Nerub'ar Weblord")>
+[fireplace.card]: <Minion ("Nerub'ar Weblord")> moves from <Zone.DECK: 2> to <Zone.HAND: 3>
+[fireplace.entity]: Empty stack, refreshing auras and processing deaths
+[fireplace.actions]: Player1 plays <Minion ('Scaled Nightmare')> (target=None, index=None)
+[fireplace.entity]: Player1 pays 6 mana
+[fireplace.card]: <Minion ('Scaled Nightmare')> moves from <Zone.HAND: 3> to <Zone.PLAY: 1>
+[fireplace.actions]: <Minion ('Scaled Nightmare')> triggering <TargetedAction: Battlecry(<Battlecry.TARGET>=None)> targeting [<Minion ('Scaled Nightmare')>]
+[fireplace.actions]: Activating <Minion ('Scaled Nightmare')> action targeting None
+[fireplace.entity]: Empty stack, refreshing auras and processing deaths
+[fireplace.entity]: Empty stack, refreshing auras and processing deaths
+[fireplace.entity]: Player1 ends turn 12
+[fireplace.entity]: Player2 begins turn 13
+[fireplace.entity]: Player2 is now at 7 mana crystals
+[fireplace.actions]: Player(name='Player2', hero=<Hero ('Uther Lightbringer')>) triggering <TargetedAction: Draw()> targeting [Player(name='Player2', hero=<Hero ('Uther Lightbringer')>)]
+[fireplace.entity]: Player2 draws <Minion ('Duskboar')>
+[fireplace.card]: <Minion ('Duskboar')> moves from <Zone.DECK: 2> to <Zone.HAND: 3>
+[fireplace.entity]: Empty stack, refreshing auras and processing deaths
+[fireplace.actions]: Player2 plays <Minion ('Grand Crusader')> (target=None, index=None)
+[fireplace.entity]: Player2 pays 6 mana
+[fireplace.card]: <Minion ('Grand Crusader')> moves from <Zone.HAND: 3> to <Zone.PLAY: 1>
+[fireplace.actions]: <Minion ('Grand Crusader')> triggering <TargetedAction: Battlecry(<Battlecry.TARGET>=None)> targeting [<Minion ('Grand Crusader')>]
+[fireplace.actions]: Activating <Minion ('Grand Crusader')> action targeting None
+[fireplace.actions]: <Minion ('Grand Crusader')> triggering <TargetedAction: Give(<Give.CARD>=RandomCardPicker({'card_class': <CardClass.PALADIN: 5>, 'collectible': True}))> targeting [Player(name='Player2', hero=<Hero ('Uther Lightbringer')>)]
+[fireplace.actions]: Giving [<Spell ('Humility')>] to Player2
+[fireplace.card]: <Spell ('Humility')> moves from <Zone.SETASIDE: 6> to <Zone.HAND: 3>
+[fireplace.entity]: Empty stack, refreshing auras and processing deaths
+[fireplace.actions]: <Minion ('Grand Crusader')> triggering <TargetedAction: Give(<Give.CARD>=RandomCardPicker({'card_class': <CardClass.PALADIN: 5>, 'collectible': True}))> targeting [Player(name='Player2', hero=<Hero ('Uther Lightbringer')>)]
+[fireplace.actions]: Giving [<Spell ('Forbidden Healing')>] to Player2
+[fireplace.card]: <Spell ('Forbidden Healing')> moves from <Zone.SETASIDE: 6> to <Zone.HAND: 3>
+[fireplace.entity]: Empty stack, refreshing auras and processing deaths
+[fireplace.entity]: Empty stack, refreshing auras and processing deaths
+[fireplace.actions]: Player2 plays <Spell ('Humility')> (target=<Minion ('Ancient Brewmaster')>, index=None)
+[fireplace.entity]: Player2 pays 1 mana
+[fireplace.card]: <Spell ('Humility')> moves from <Zone.HAND: 3> to <Zone.PLAY: 1>
+[fireplace.actions]: <Spell ('Humility')> triggering <TargetedAction: Battlecry(<Battlecry.TARGET>=<Minion ('Ancient Brewmaster')>)> targeting [<Spell ('Humility')>]
+[fireplace.actions]: Activating <Spell ('Humility')> action targeting <Minion ('Ancient Brewmaster')>
+[fireplace.actions]: <Spell ('Humility')> triggering <TargetedAction: Buff(<Buff.BUFF>='EX1_360e')> targeting [<Minion ('Ancient Brewmaster')>]
+[fireplace.entity]: Applying <Enchantment ('Humility')> to <Minion ('Ancient Brewmaster')>
+[fireplace.card]: <Enchantment ('Humility')> moves from <Zone.SETASIDE: 6> to <Zone.PLAY: 1>
+[fireplace.entity]: Empty stack, refreshing auras and processing deaths
+[fireplace.entity]: Empty stack, refreshing auras and processing deaths
+[fireplace.actions]: <Minion ('Ancient Brewmaster')> attacks <Hero ('Valeera Sanguinar')>
+[fireplace.actions]: <Minion ('Ancient Brewmaster')> triggering <TargetedAction: Hit(<Hit.AMOUNT>=1)> targeting [<Hero ('Valeera Sanguinar')>]
+[fireplace.actions]: <Minion ('Ancient Brewmaster')> triggering <TargetedAction: Predamage(<Predamage.AMOUNT>=1)> targeting [<Hero ('Valeera Sanguinar')>]
+[fireplace.actions]: <Minion ('Ancient Brewmaster')> triggering <TargetedAction: Damage()> targeting [<Hero ('Valeera Sanguinar')>]
+[fireplace.entity]: Empty stack, refreshing auras and processing deaths
+[fireplace.actions]: <Minion ('Hemet Nesingwary')> attacks <Hero ('Valeera Sanguinar')>
+[fireplace.actions]: <Minion ('Hemet Nesingwary')> triggering <TargetedAction: Hit(<Hit.AMOUNT>=6)> targeting [<Hero ('Valeera Sanguinar')>]
+[fireplace.actions]: <Minion ('Hemet Nesingwary')> triggering <TargetedAction: Predamage(<Predamage.AMOUNT>=6)> targeting [<Hero ('Valeera Sanguinar')>]
+[fireplace.actions]: <Minion ('Hemet Nesingwary')> triggering <TargetedAction: Damage()> targeting [<Hero ('Valeera Sanguinar')>]
+[fireplace.entity]: Empty stack, refreshing auras and processing deaths
+[fireplace.actions]: <Minion ('Silver Hand Recruit')> attacks <Hero ('Valeera Sanguinar')>
+[fireplace.actions]: <Minion ('Silver Hand Recruit')> triggering <TargetedAction: Hit(<Hit.AMOUNT>=1)> targeting [<Hero ('Valeera Sanguinar')>]
+[fireplace.actions]: <Minion ('Silver Hand Recruit')> triggering <TargetedAction: Predamage(<Predamage.AMOUNT>=1)> targeting [<Hero ('Valeera Sanguinar')>]
+[fireplace.actions]: <Minion ('Silver Hand Recruit')> triggering <TargetedAction: Damage()> targeting [<Hero ('Valeera Sanguinar')>]
+[fireplace.entity]: Empty stack, refreshing auras and processing deaths
+[fireplace.actions]: <Minion ('Brann Bronzebeard')> attacks <Hero ('Valeera Sanguinar')>
+[fireplace.actions]: <Minion ('Brann Bronzebeard')> triggering <TargetedAction: Hit(<Hit.AMOUNT>=2)> targeting [<Hero ('Valeera Sanguinar')>]
+[fireplace.actions]: <Minion ('Brann Bronzebeard')> triggering <TargetedAction: Predamage(<Predamage.AMOUNT>=2)> targeting [<Hero ('Valeera Sanguinar')>]
+[fireplace.actions]: <Minion ('Brann Bronzebeard')> triggering <TargetedAction: Damage()> targeting [<Hero ('Valeera Sanguinar')>]
+[fireplace.entity]: Empty stack, refreshing auras and processing deaths
+[fireplace.entity]: Player2 ends turn 13
+[fireplace.actions]: <Minion ('Scaled Nightmare')> triggers off <Action: BeginTurn(<BeginTurn.PLAYER>=Player(name='Player1', hero=<Hero ('Valeera Sanguinar')>))> from Game(players=(Player(name='Player1', hero=<Hero ('Valeera Sanguinar')>), Player(name='Player2', hero=<Hero ('Uther Lightbringer')>)))
+[fireplace.actions]: <Minion ('Scaled Nightmare')> triggering <TargetedAction: Buff(<Buff.BUFF>='OG_271e')> targeting [<Minion ('Scaled Nightmare')>]
+[fireplace.entity]: Applying <Enchantment ('Terrifying Visage')> to <Minion ('Scaled Nightmare')>
+[fireplace.card]: <Enchantment ('Terrifying Visage')> moves from <Zone.SETASIDE: 6> to <Zone.PLAY: 1>
+[fireplace.entity]: Empty stack, refreshing auras and processing deaths
+[fireplace.entity]: Player1 begins turn 14
+[fireplace.entity]: Player1 is now at 7 mana crystals
+[fireplace.actions]: Player(name='Player1', hero=<Hero ('Valeera Sanguinar')>) triggering <TargetedAction: Draw()> targeting [Player(name='Player1', hero=<Hero ('Valeera Sanguinar')>)]
+[fireplace.entity]: Player1 draws <Minion ('Feugen')>
+[fireplace.card]: <Minion ('Feugen')> moves from <Zone.DECK: 2> to <Zone.HAND: 3>
+[fireplace.entity]: Empty stack, refreshing auras and processing deaths
+[fireplace.actions]: Player1 plays <Minion ('Cyclopian Horror')> (target=None, index=None)
+[fireplace.entity]: Player1 pays 4 mana
+[fireplace.card]: <Minion ('Cyclopian Horror')> moves from <Zone.HAND: 3> to <Zone.PLAY: 1>
+[fireplace.actions]: <Minion ('Cyclopian Horror')> triggering <TargetedAction: Battlecry(<Battlecry.TARGET>=None)> targeting [<Minion ('Cyclopian Horror')>]
+[fireplace.actions]: Activating <Minion ('Cyclopian Horror')> action targeting None
+[fireplace.entity]: Empty stack, refreshing auras and processing deaths
+[fireplace.entity]: Empty stack, refreshing auras and processing deaths
+[fireplace.actions]: <Minion ('Scaled Nightmare')> attacks <Hero ('Uther Lightbringer')>
+[fireplace.actions]: <Minion ('Scaled Nightmare')> triggering <TargetedAction: Hit(<Hit.AMOUNT>=4)> targeting [<Hero ('Uther Lightbringer')>]
+[fireplace.actions]: <Minion ('Scaled Nightmare')> triggering <TargetedAction: Predamage(<Predamage.AMOUNT>=4)> targeting [<Hero ('Uther Lightbringer')>]
+[fireplace.actions]: <Minion ('Scaled Nightmare')> triggering <TargetedAction: Damage()> targeting [<Hero ('Uther Lightbringer')>]
+[fireplace.entity]: Empty stack, refreshing auras and processing deaths
+[fireplace.entity]: Player1 ends turn 14
+[fireplace.entity]: Player2 begins turn 15
+[fireplace.entity]: Player2 is now at 8 mana crystals
+[fireplace.actions]: Player(name='Player2', hero=<Hero ('Uther Lightbringer')>) triggering <TargetedAction: Draw()> targeting [Player(name='Player2', hero=<Hero ('Uther Lightbringer')>)]
+[fireplace.entity]: Player2 draws <Minion ('Ironfur Grizzly')>
+[fireplace.card]: <Minion ('Ironfur Grizzly')> moves from <Zone.DECK: 2> to <Zone.HAND: 3>
+[fireplace.entity]: Empty stack, refreshing auras and processing deaths
+[fireplace.actions]: Player2 plays <Minion ('Argent Watchman')> (target=None, index=None)
+[fireplace.entity]: Player2 pays 2 mana
+[fireplace.card]: <Minion ('Argent Watchman')> moves from <Zone.HAND: 3> to <Zone.PLAY: 1>
+[fireplace.actions]: <Minion ('Argent Watchman')> triggering <TargetedAction: Battlecry(<Battlecry.TARGET>=None)> targeting [<Minion ('Argent Watchman')>]
+[fireplace.actions]: Activating <Minion ('Argent Watchman')> action targeting None
+[fireplace.entity]: Empty stack, refreshing auras and processing deaths
+[fireplace.entity]: Empty stack, refreshing auras and processing deaths
+[fireplace.actions]: Player2 plays <Minion ('Ironfur Grizzly')> (target=None, index=None)
+[fireplace.entity]: Player2 pays 3 mana
+[fireplace.card]: <Minion ('Ironfur Grizzly')> moves from <Zone.HAND: 3> to <Zone.PLAY: 1>
+[fireplace.actions]: <Minion ('Ironfur Grizzly')> triggering <TargetedAction: Battlecry(<Battlecry.TARGET>=None)> targeting [<Minion ('Ironfur Grizzly')>]
+[fireplace.actions]: Activating <Minion ('Ironfur Grizzly')> action targeting None
+[fireplace.entity]: Empty stack, refreshing auras and processing deaths
+[fireplace.entity]: Empty stack, refreshing auras and processing deaths
+[fireplace.actions]: <Minion ('Ancient Brewmaster')> attacks <Minion ('Cyclopian Horror')>
+[fireplace.actions]: <Minion ('Ancient Brewmaster')> triggering <TargetedAction: Hit(<Hit.AMOUNT>=1)> targeting [<Minion ('Cyclopian Horror')>]
+[fireplace.actions]: <Minion ('Ancient Brewmaster')> triggering <TargetedAction: Predamage(<Predamage.AMOUNT>=1)> targeting [<Minion ('Cyclopian Horror')>]
+[fireplace.actions]: <Minion ('Ancient Brewmaster')> triggering <TargetedAction: Damage()> targeting [<Minion ('Cyclopian Horror')>]
+[fireplace.actions]: <Minion ('Cyclopian Horror')> triggering <TargetedAction: Hit(<Hit.AMOUNT>=3)> targeting [<Minion ('Ancient Brewmaster')>]
+[fireplace.actions]: <Minion ('Cyclopian Horror')> triggering <TargetedAction: Predamage(<Predamage.AMOUNT>=3)> targeting [<Minion ('Ancient Brewmaster')>]
+[fireplace.actions]: <Minion ('Cyclopian Horror')> triggering <TargetedAction: Damage()> targeting [<Minion ('Ancient Brewmaster')>]
+[fireplace.entity]: Empty stack, refreshing auras and processing deaths
+[fireplace.actions]: <Minion ('Hemet Nesingwary')> attacks <Minion ('Cyclopian Horror')>
+[fireplace.actions]: <Minion ('Hemet Nesingwary')> triggering <TargetedAction: Hit(<Hit.AMOUNT>=6)> targeting [<Minion ('Cyclopian Horror')>]
+[fireplace.actions]: <Minion ('Hemet Nesingwary')> triggering <TargetedAction: Predamage(<Predamage.AMOUNT>=6)> targeting [<Minion ('Cyclopian Horror')>]
+[fireplace.actions]: <Minion ('Hemet Nesingwary')> triggering <TargetedAction: Damage()> targeting [<Minion ('Cyclopian Horror')>]
+[fireplace.actions]: <Minion ('Cyclopian Horror')> triggering <TargetedAction: Hit(<Hit.AMOUNT>=3)> targeting [<Minion ('Hemet Nesingwary')>]
+[fireplace.actions]: <Minion ('Cyclopian Horror')> triggering <TargetedAction: Predamage(<Predamage.AMOUNT>=3)> targeting [<Minion ('Hemet Nesingwary')>]
+[fireplace.actions]: <Minion ('Cyclopian Horror')> triggering <TargetedAction: Damage()> targeting [<Minion ('Hemet Nesingwary')>]
+[fireplace.entity]: Empty stack, refreshing auras and processing deaths
+[fireplace.entity]: <Minion ('Cyclopian Horror')> is removed from the field
+[fireplace.card]: <Minion ('Cyclopian Horror')> moves from <Zone.PLAY: 1> to <Zone.GRAVEYARD: 4>
+[fireplace.entity]: <Minion ('Hemet Nesingwary')> is removed from the field
+[fireplace.card]: <Minion ('Hemet Nesingwary')> moves from <Zone.PLAY: 1> to <Zone.GRAVEYARD: 4>
+[fireplace.entity]: Empty stack, refreshing auras and processing deaths
+[fireplace.actions]: Processing Death for <Minion ('Cyclopian Horror')>
+[fireplace.actions]: Processing Death for <Minion ('Hemet Nesingwary')>
+[fireplace.entity]: Empty stack, refreshing auras and processing deaths
+[fireplace.actions]: <Minion ('Silver Hand Recruit')> attacks <Minion ('Scaled Nightmare')>
+[fireplace.actions]: <Minion ('Silver Hand Recruit')> triggering <TargetedAction: Hit(<Hit.AMOUNT>=1)> targeting [<Minion ('Scaled Nightmare')>]
+[fireplace.actions]: <Minion ('Silver Hand Recruit')> triggering <TargetedAction: Predamage(<Predamage.AMOUNT>=1)> targeting [<Minion ('Scaled Nightmare')>]
+[fireplace.actions]: <Minion ('Silver Hand Recruit')> triggering <TargetedAction: Damage()> targeting [<Minion ('Scaled Nightmare')>]
+[fireplace.actions]: <Minion ('Scaled Nightmare')> triggering <TargetedAction: Hit(<Hit.AMOUNT>=4)> targeting [<Minion ('Silver Hand Recruit')>]
+[fireplace.actions]: <Minion ('Scaled Nightmare')> triggering <TargetedAction: Predamage(<Predamage.AMOUNT>=4)> targeting [<Minion ('Silver Hand Recruit')>]
+[fireplace.actions]: <Minion ('Scaled Nightmare')> triggering <TargetedAction: Damage()> targeting [<Minion ('Silver Hand Recruit')>]
+[fireplace.entity]: Empty stack, refreshing auras and processing deaths
+[fireplace.entity]: <Minion ('Silver Hand Recruit')> is removed from the field
+[fireplace.card]: <Minion ('Silver Hand Recruit')> moves from <Zone.PLAY: 1> to <Zone.GRAVEYARD: 4>
+[fireplace.entity]: Empty stack, refreshing auras and processing deaths
+[fireplace.actions]: Processing Death for <Minion ('Silver Hand Recruit')>
+[fireplace.entity]: Empty stack, refreshing auras and processing deaths
+[fireplace.actions]: <Minion ('Brann Bronzebeard')> attacks <Hero ('Valeera Sanguinar')>
+[fireplace.actions]: <Minion ('Brann Bronzebeard')> triggering <TargetedAction: Hit(<Hit.AMOUNT>=2)> targeting [<Hero ('Valeera Sanguinar')>]
+[fireplace.actions]: <Minion ('Brann Bronzebeard')> triggering <TargetedAction: Predamage(<Predamage.AMOUNT>=2)> targeting [<Hero ('Valeera Sanguinar')>]
+[fireplace.actions]: <Minion ('Brann Bronzebeard')> triggering <TargetedAction: Damage()> targeting [<Hero ('Valeera Sanguinar')>]
+[fireplace.entity]: Empty stack, refreshing auras and processing deaths
+[fireplace.actions]: <Minion ('Grand Crusader')> attacks <Hero ('Valeera Sanguinar')>
+[fireplace.actions]: <Minion ('Grand Crusader')> triggering <TargetedAction: Hit(<Hit.AMOUNT>=5)> targeting [<Hero ('Valeera Sanguinar')>]
+[fireplace.actions]: <Minion ('Grand Crusader')> triggering <TargetedAction: Predamage(<Predamage.AMOUNT>=5)> targeting [<Hero ('Valeera Sanguinar')>]
+[fireplace.actions]: <Minion ('Grand Crusader')> triggering <TargetedAction: Damage()> targeting [<Hero ('Valeera Sanguinar')>]
+[fireplace.entity]: Empty stack, refreshing auras and processing deaths
+[fireplace.card]: <HeroPower ('Dagger Mastery')> moves from <Zone.PLAY: 1> to <Zone.GRAVEYARD: 4>
+[fireplace.card]: <Hero ('Valeera Sanguinar')> moves from <Zone.PLAY: 1> to <Zone.GRAVEYARD: 4>
+Can mulligan [<Minion ("Mukla's Champion")>, <Minion ('Scaled Nightmare')>, <Spell ('Journey Below')>, <Minion ('Violet Teacher')>]
+Can mulligan [<Minion ('Duskboar')>, <Minion ('Tirion Fordring')>, <Minion ('Spellbreaker')>]
+Playing <Spell ('Journey Below')> on None
+Playing <Minion ('Silithid Swarmer')> on None
+Playing <Spell ('The Coin')> on None
+Playing <Minion ('Ancient Brewmaster')> on <Minion ('Silithid Swarmer')>
+Playing <Minion ('Armored Warhorse')> on None
+Playing <Minion ('Hemet Nesingwary')> on <Minion ('Armored Warhorse')>
+Playing <Spell ('Preparation')> on None
+Playing <Minion ('Brann Bronzebeard')> on None
+Playing <Minion ('Scaled Nightmare')> on None
+Playing <Minion ('Grand Crusader')> on None
+Playing <Spell ('Humility')> on <Minion ('Ancient Brewmaster')>
+Playing <Minion ('Cyclopian Horror')> on None
+Playing <Minion ('Argent Watchman')> on None
+Playing <Minion ('Ironfur Grizzly')> on None
+Game completed normally.
