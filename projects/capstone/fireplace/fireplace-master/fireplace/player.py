@@ -9,7 +9,8 @@ from .entity import Entity
 from .entity import slot_property
 from .managers import PlayerManager
 from .utils import CardList
-
+from .sql_logger import sql_logger, df_logger
+from sqlalchemy import create_engine
 
 class Player(Entity, TargetableByAuras):
 	Manager = PlayerManager
@@ -86,6 +87,7 @@ class Player(Entity, TargetableByAuras):
 	def max_mana(self, amount):
 		self._max_mana = min(self.max_resources, max(0, amount))
 		self.log("%s is now at %i mana crystals", self, self._max_mana)
+		df_logger.log_event("max_mana", str(self._max_mana), str(self))
 
 	@property
 	def heropower_damage(self):
@@ -201,6 +203,7 @@ class Player(Entity, TargetableByAuras):
 			amount -= used_temp
 			self.temp_mana -= used_temp
 		self.log("%s pays %i mana", self, amount)
+		df_logger.log_event("mana_spent", str(amount), str(self))
 		self.used_mana += amount
 		return amount
 

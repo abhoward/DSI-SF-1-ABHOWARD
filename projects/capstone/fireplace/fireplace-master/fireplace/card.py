@@ -7,7 +7,8 @@ from .managers import CardManager
 from .targeting import is_valid_target
 from .utils import CardList
 from .exceptions import InvalidAction
-
+from .sql_logger import sql_logger, df_logger
+from sqlalchemy import create_engine
 
 THE_COIN = "GAME_005"
 
@@ -81,6 +82,14 @@ class BaseCard(BaseEntity):
 
 		if old:
 			self.logger.debug("%r moves from %r to %r", self, old, value)
+			if str(value) == "Zone.GRAVEYARD" and str(self) in [
+			"Malfurion Stormrage", "Rexxar", "Jaina Proudmoore",
+			"Uther Lightbringer", "Anduin Wrynn", "Valeera Sanguinar", "Thrall",
+			"Gul'dan", "Lord Jaraxxus", "Garrosh Hellscream",
+			"Alleria Windrunner", "Medivh", "Khadgar", "Lady Liadrin",
+			"Magni Bronzebeard", "Ragnaros the Firelord"]:
+				df_logger.log_event("lost", str(value), str(self.controller))
+				# df_logger.save_increment_last_game_id()
 
 		caches = {
 			Zone.HAND: self.controller.hand,
@@ -220,6 +229,7 @@ class PlayableCard(BaseCard, Entity, TargetableByAuras):
 	def draw(self):
 		if len(self.controller.hand) >= self.controller.max_hand_size:
 			self.log("%s overdraws and loses %r!", self.controller, self)
+			df_logger.log_event("overdraw", str(self), str(self.controller))
 			self.discard()
 		else:
 			self.log("%s draws %r", self.controller, self)
@@ -854,7 +864,7 @@ class HeroPower(PlayableCard):
 			raise InvalidAction("%r can't be used." % (self))
 
 		self.log("%s uses hero power %r on %r", self.controller, self, target)
-
+		df_logger.log_event("hero_power", str(target), str(self.controller))
 		if self.has_target():
 			if not target:
 				raise InvalidAction("%r requires a target." % (self))

@@ -1,5 +1,6 @@
 import random
 import time
+from sqlalchemy import create_engine
 from calendar import timegm
 from itertools import chain
 from hearthstone.enums import CardType, PlayState, BlockType, State, Step, Zone
@@ -9,7 +10,7 @@ from .entity import Entity
 from .managers import GameManager
 from .utils import CardList
 from .exceptions import GameOver
-
+from .sql_logger import sql_logger, df_logger
 
 class BaseGame(Entity):
 	type = CardType.GAME
@@ -182,6 +183,8 @@ class BaseGame(Entity):
 			self.state = State.COMPLETE
 			self.manager.step(self.next_step, Step.FINAL_WRAPUP)
 			self.manager.step(self.next_step, Step.FINAL_GAMEOVER)
+			df_logger.log_event("debug", "ending_game", "check_for_end_game")
+			df_logger.save_increment_last_game_id()
 			self.manager.step(self.next_step)
 
 	def queue_actions(self, source, actions, event_args=None):
@@ -278,6 +281,7 @@ class BaseGame(Entity):
 
 	def _end_turn(self):
 		self.log("%s ends turn %i", self.current_player, self.turn)
+		df_logger.log_event("turn_end", str(self.turn), str(self.current_player))
 		self.manager.step(self.next_step, Step.MAIN_CLEANUP)
 		self.current_player.temp_mana = 0
 		self.end_turn_cleanup()
@@ -300,6 +304,7 @@ class BaseGame(Entity):
 		self.manager.step(self.next_step, Step.MAIN_READY)
 		self.turn += 1
 		self.log("%s begins turn %i", player, self.turn)
+		df_logger.log_event("turn_begins"  , str(self.turn), str(player))
 		self.current_player = player
 		self.manager.step(self.next_step, Step.MAIN_START_TRIGGERS)
 		self.manager.step(self.next_step, Step.MAIN_START)
@@ -336,9 +341,11 @@ class CoinRules:
 	Randomly determines the starting player when the Game starts.
 	The second player gets "The Coin" (GAME_005).
 	"""
+
 	def pick_first_player(self):
 		winner = random.choice(self.players)
 		self.log("Tossing the coin... %s wins!", winner)
+		df_logger.log_event("first_player", str(winner), str(winner))
 		return winner, winner.opponent
 
 	def begin_turn(self, player):

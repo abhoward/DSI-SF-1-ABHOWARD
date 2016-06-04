@@ -7,7 +7,7 @@ from typing import List
 from xml.etree import ElementTree
 from hearthstone.enums import CardClass, CardType
 from .logging import log
-
+from .sql_logger import sql_logger, df_logger
 
 # Autogenerate the list of cardset modules
 _cards_module = os.path.join(os.path.dirname(__file__), "cards")
@@ -176,6 +176,8 @@ def setup_game() -> ".game.Game":
 	deck2 = random_draft(CardClass(random_num2))
 	player1 = Player("Player1", deck1, CardClass(random_num1).default_hero)
 	player2 = Player("Player2", deck2, CardClass(random_num2).default_hero)
+	df_logger.log_event("player1_class", str(CardClass(random_num1)), "Player1")
+	df_logger.log_event("player2_class", str(CardClass(random_num2)), "Player2")
 
 	game = Game(players=(player1, player2))
 	game.start()
@@ -234,7 +236,10 @@ def play_full_game() -> ".game.Game":
 		log.info("Can mulligan %r" % (player.choice.cards))
 		mull_count = random.randint(0, len(player.choice.cards))
 		cards_to_mulligan = random.sample(player.choice.cards, mull_count)
+		cards_to_keep = [x for x in list(player.choice.cards) if x not in cards_to_mulligan]
 		player.choice.choose(*cards_to_mulligan)
+		df_logger.log_event("cards_mulliganed", str(cards_to_mulligan), str(player))
+		df_logger.log_event("cards_kept", str(cards_to_keep), str(player))
 
 	while True:
 		play_turn(game)
