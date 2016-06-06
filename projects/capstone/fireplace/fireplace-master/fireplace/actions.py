@@ -6,6 +6,7 @@ from .entity import Entity
 from .logging import log
 from .exceptions import InvalidAction
 from .utils import random_class
+from .sql_logger import sql_logger, df_logger
 
 
 def _eval_card(source, card):

@@ -89,7 +89,6 @@ class BaseCard(BaseEntity):
 			"Alleria Windrunner", "Medivh", "Khadgar", "Lady Liadrin",
 			"Magni Bronzebeard", "Ragnaros the Firelord"]:
 				df_logger.log_event("lost", str(value), str(self.controller))
-				# df_logger.save_increment_last_game_id()
 
 		caches = {
 			Zone.HAND: self.controller.hand,
@@ -864,7 +863,7 @@ class HeroPower(PlayableCard):
 			raise InvalidAction("%r can't be used." % (self))
 
 		self.log("%s uses hero power %r on %r", self.controller, self, target)
-		df_logger.log_event("hero_power", str(target), str(self.controller))
+		df_logger.log_event("hero_power", "target: " + str(target), str(self.controller))
 		if self.has_target():
 			if not target:
 				raise InvalidAction("%r requires a target." % (self))
@@ -876,6 +875,7 @@ class HeroPower(PlayableCard):
 
 		self.controller.times_hero_power_used_this_game += 1
 		self.controller.used_mana += self.cost
+		self.log("%s spends %i mana on %r", self.controller, self.controller.used_mana, self)
 		self.target = None
 
 		return ret

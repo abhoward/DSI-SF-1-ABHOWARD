@@ -3,13 +3,14 @@ import time
 from sqlalchemy import create_engine
 from calendar import timegm
 from itertools import chain
-from hearthstone.enums import CardType, PlayState, BlockType, State, Step, Zone
+from hearthstone.enums import CardClass, CardType, PlayState, BlockType, State, Step, Zone
 from .actions import Attack, BeginTurn, Death, EndTurn, EventListener, Play
 from .card import THE_COIN
 from .entity import Entity
 from .managers import GameManager
 from .utils import CardList
 from .exceptions import GameOver
+from .player import Player
 from .sql_logger import sql_logger, df_logger
 
 class BaseGame(Entity):
@@ -183,7 +184,6 @@ class BaseGame(Entity):
 			self.state = State.COMPLETE
 			self.manager.step(self.next_step, Step.FINAL_WRAPUP)
 			self.manager.step(self.next_step, Step.FINAL_GAMEOVER)
-			df_logger.log_event("debug", "ending_game", "check_for_end_game")
 			df_logger.save_increment_last_game_id()
 			self.manager.step(self.next_step)
 
@@ -281,7 +281,16 @@ class BaseGame(Entity):
 
 	def _end_turn(self):
 		self.log("%s ends turn %i", self.current_player, self.turn)
+		df_logger.log_event("mana_used", str(self.current_player.used_mana), str(self.current_player))
 		df_logger.log_event("turn_end", str(self.turn), str(self.current_player))
+
+		entities = self.entities
+
+		# alec: for each player, return their hero's health (with armor) and the player's name
+		for entity in entities:
+			if entity.type == CardType.PLAYER:
+				df_logger.log_event("hero_health", str(entity.hero.health + entity.hero.armor), str(entity))
+
 		self.manager.step(self.next_step, Step.MAIN_CLEANUP)
 		self.current_player.temp_mana = 0
 		self.end_turn_cleanup()

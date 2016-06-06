@@ -1,5 +1,6 @@
 import random
 import os.path
+import numpy as np
 from bisect import bisect
 from importlib import import_module
 from pkgutil import iter_modules
@@ -13,6 +14,10 @@ from .sql_logger import sql_logger, df_logger
 _cards_module = os.path.join(os.path.dirname(__file__), "cards")
 CARD_SETS = [cs for _, cs, ispkg in iter_modules([_cards_module]) if ispkg]
 
+card_mana = []
+spells = []
+minions = []
+weapons = []
 
 class CardList(list):
 	def __contains__(self, x):
@@ -89,9 +94,15 @@ def random_draft(card_class: CardClass, exclude=[]):
 		card = random.choice(collection)
 		if deck.count(card.id) < card.max_count_in_deck:
 			deck.append(card.id)
+			card_mana.append(card.cost)
+			if card.type == CardType.SPELL:
+				spells.append(card.id)
+			elif card.type == CardType.MINION:
+				minions.append(card.id)
+			elif card.type == CardType.WEAPON:
+				weapons.append(card.id)
 
 	return deck
-
 
 def random_class():
 	return CardClass(random.randint(2, 10))
@@ -173,11 +184,29 @@ def setup_game() -> ".game.Game":
 	random_num2 = random.randint(2, 10)
 
 	deck1 = random_draft(CardClass(random_num1))
+	df_logger.log_event("deck", str(deck1), "player1")
+	df_logger.log_event("deck_cost", str(np.mean(card_mana)), "player1")
+	df_logger.log_event("num_minions", str(len(minions)), "player1")
+	df_logger.log_event("num_spells", str(len(spells)), "player1")
+	df_logger.log_event("num_weapons", str(len(weapons)), "player1")
+	del card_mana[:] # Resetting list of cards' mana cost
+	del minions[:] # Resetting list of minions
+	del spells[:] # Resetting list of spells
+	del weapons[:] # Resetting list of weapons
 	deck2 = random_draft(CardClass(random_num2))
+	df_logger.log_event("deck", str(deck2), "player2")
+	df_logger.log_event("deck_cost", str(np.mean(card_mana)), "player2")
+	df_logger.log_event("num_minions", str(len(minions)), "player2")
+	df_logger.log_event("num_spells", str(len(spells)), "player2")
+	df_logger.log_event("num_weapons", str(len(weapons)), "player2")
+	del card_mana[:] # Resetting list of cards' mana cost
+	del minions[:] # Resetting list of minions
+	del spells[:] # Resetting list of spells
+	del weapons[:] # Resetting list of weapons
 	player1 = Player("Player1", deck1, CardClass(random_num1).default_hero)
 	player2 = Player("Player2", deck2, CardClass(random_num2).default_hero)
-	df_logger.log_event("player1_class", str(CardClass(random_num1)), "Player1")
-	df_logger.log_event("player2_class", str(CardClass(random_num2)), "Player2")
+	df_logger.log_event("player1_class", str(CardClass(random_num1)), "player1")
+	df_logger.log_event("player2_class", str(CardClass(random_num2)), "player2")
 
 	game = Game(players=(player1, player2))
 	game.start()
@@ -187,10 +216,11 @@ def setup_game() -> ".game.Game":
 
 def play_turn(game: ".game.Game") -> ".game.Game":
 	player = game.current_player
-
+	cards_cost = []
 	while True:
 		heropower = player.hero.power
-		if heropower.is_usable() and random.random() < 0.1:
+		# alec: changed random factor from 0.1 to 0.3
+		if heropower.is_usable() and random.random() < 0.3:
 			if heropower.has_target():
 				heropower.use(target=random.choice(heropower.targets))
 			else:
@@ -198,8 +228,11 @@ def play_turn(game: ".game.Game") -> ".game.Game":
 			continue
 
 		# iterate over our hand and play whatever is playable
+		# alec: made simulation play a card (if it's playable) no matter what,
+		# instead of having a random factor in as well.
 		for card in player.hand:
-			if card.is_playable() and random.random() < 0.5:
+			cards_cost.append(card.cost)
+			if card.is_playable():
 				target = None
 				if card.must_choose_one:
 					card = random.choice(card.choose_cards)
@@ -216,14 +249,13 @@ def play_turn(game: ".game.Game") -> ".game.Game":
 					player.choice.choose(choice)
 
 				continue
-
+		df_logger.log_event("avg_hand_cost", str(np.mean(cards_cost)), str(player.name))
 		# Randomly attack with whatever can attack
 		for character in player.characters:
 			if character.can_attack():
 				character.attack(random.choice(character.targets))
 
 		break
-
 	game.end_turn()
 	return game
 

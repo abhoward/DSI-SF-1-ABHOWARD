@@ -32,7 +32,7 @@ class sql_logger:
 
         event = [{
             "game_id":      self.last_game_id,
-            "timestamp":    datetime.now(),
+            "timestamp":    datetime.now().strftime('%Y-%m-%d %H:%M:%S:%f'),
             "event_key":    event_key,
             "event_value":  event_value,
             "player":       player
@@ -46,4 +46,4 @@ class sql_logger:
 
         return pd.read_sql("SELECT * FROM events", con=self.engine)
 
-df_logger = sql_logger(sql_file = "test3.db")
+df_logger = sql_logger(sql_file = "test4.db")
