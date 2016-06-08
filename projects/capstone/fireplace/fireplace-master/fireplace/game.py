@@ -97,7 +97,7 @@ class BaseGame(Entity):
 		if type != BlockType.PLAY:
 			self._action_stack -= 1
 		if not self._action_stack:
-			self.log("Empty stack, refreshing auras and processing deaths")
+			# # self.log("Empty stack, refreshing auras and processing deaths")
 			self.refresh_auras()
 			self.process_deaths()
 
@@ -207,7 +207,7 @@ class BaseGame(Entity):
 			if isinstance(action, EventListener):
 				# Queuing an EventListener registers it as a one-time event
 				# This allows registering events from eg. play actions
-				self.log("Registering event listener %r on %r", action, self)
+				# self.log("Registering event listener %r on %r", action, self)
 				action.once = True
 				# FIXME: Figure out a cleaner way to get the event listener target
 				if source.type == CardType.SPELL:
@@ -252,7 +252,7 @@ class BaseGame(Entity):
 		self.tick += 1
 
 	def setup(self):
-		self.log("Setting up game %r", self)
+		# self.log("Setting up game %r", self)
 		self.state = State.RUNNING
 		self.step = Step.BEGIN_DRAW
 		self.zone = Zone.PLAY
@@ -280,7 +280,7 @@ class BaseGame(Entity):
 		return self.queue_actions(self, [EndTurn(self.current_player)])
 
 	def _end_turn(self):
-		self.log("%s ends turn %i", self.current_player, self.turn)
+		# self.log("%s ends turn %i", self.current_player, self.turn)
 		df_logger.log_event("mana_used", str(self.current_player.used_mana), str(self.current_player))
 		df_logger.log_event("turn_end", str(self.turn), str(self.current_player))
 
@@ -299,10 +299,10 @@ class BaseGame(Entity):
 		self.manager.step(self.next_step, Step.MAIN_NEXT)
 		for character in self.current_player.characters.filter(frozen=True):
 			if not character.num_attacks and not character.exhausted:
-				self.log("Freeze fades from %r", character)
+				# self.log("Freeze fades from %r", character)
 				character.frozen = False
 		for buff in self.entities.filter(one_turn_effect=True):
-			self.log("Ending One-Turn effect: %r", buff)
+			# self.log("Ending One-Turn effect: %r", buff)
 			buff.remove()
 		self.begin_turn(self.current_player.opponent)
 
@@ -312,7 +312,7 @@ class BaseGame(Entity):
 	def _begin_turn(self, player):
 		self.manager.step(self.next_step, Step.MAIN_READY)
 		self.turn += 1
-		self.log("%s begins turn %i", player, self.turn)
+		# self.log("%s begins turn %i", player, self.turn)
 		df_logger.log_event("turn_begins"  , str(self.turn), str(player))
 		self.current_player = player
 		self.manager.step(self.next_step, Step.MAIN_START_TRIGGERS)
@@ -353,13 +353,13 @@ class CoinRules:
 
 	def pick_first_player(self):
 		winner = random.choice(self.players)
-		self.log("Tossing the coin... %s wins!", winner)
+		# self.log("Tossing the coin... %s wins!", winner)
 		df_logger.log_event("first_player", str(winner), str(winner))
 		return winner, winner.opponent
 
 	def begin_turn(self, player):
 		if self.turn == 0:
-			self.log("%s gets The Coin (%s)", self.player2, THE_COIN)
+			# self.log("%s gets The Coin (%s)", self.player2, THE_COIN)
 			self.player2.give(THE_COIN)
 		super().begin_turn(player)
 
@@ -374,7 +374,7 @@ class MulliganRules:
 		from .actions import MulliganChoice
 		self.setup()
 		self.next_step = Step.BEGIN_MULLIGAN
-		self.log("Entering mulligan phase")
+		# self.log("Entering mulligan phase")
 		self.step, self.next_step = self.next_step, Step.MAIN_READY
 
 		for player in self.players:

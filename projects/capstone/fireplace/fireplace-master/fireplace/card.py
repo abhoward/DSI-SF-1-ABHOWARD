@@ -222,16 +222,16 @@ class PlayableCard(BaseCard, Entity, TargetableByAuras):
 		return self.game.cheat_action(self, [actions.Destroy(self), actions.Deaths()])
 
 	def discard(self):
-		self.log("Discarding %r" % (self))
+		# self.log("Discarding %r" % (self))
 		self.zone = Zone.DISCARD
 
 	def draw(self):
 		if len(self.controller.hand) >= self.controller.max_hand_size:
-			self.log("%s overdraws and loses %r!", self.controller, self)
+			# # self.log("%s overdraws and loses %r!", self.controller, self)
 			df_logger.log_event("overdraw", str(self), str(self.controller))
 			self.discard()
 		else:
-			self.log("%s draws %r", self.controller, self)
+			# # self.log("%s draws %r", self.controller, self)
 			self.zone = Zone.HAND
 			self.controller.cards_drawn_this_turn += 1
 
@@ -282,7 +282,7 @@ class PlayableCard(BaseCard, Entity, TargetableByAuras):
 		if choose:
 			if self.must_choose_one:
 				choose = card = self.choose_cards.filter(id=choose)[0]
-				self.log("%r: choosing %r", self, choose)
+				# # self.log("%r: choosing %r", self, choose)
 			else:
 				raise InvalidAction("%r cannot be played with choice %r" % (self, choose))
 		else:
@@ -562,7 +562,7 @@ class Hero(Character):
 		amount = super()._hit(amount)
 		if self.armor:
 			reduced_damage = min(amount, self.armor)
-			self.log("%r loses %r armor instead of damage", self, reduced_damage)
+			# # self.log("%r loses %r armor instead of damage", self, reduced_damage)
 			self.damage -= reduced_damage
 			self.armor -= reduced_damage
 		return amount
@@ -649,7 +649,7 @@ class Minion(Character):
 			self.controller.minions_killed_this_turn += 1
 
 		if self.zone == Zone.PLAY:
-			self.log("%r is removed from the field", self)
+			# # self.log("%r is removed from the field", self)
 			self.controller.field.remove(self)
 			if self.damage:
 				self.damage = 0
@@ -659,13 +659,13 @@ class Minion(Character):
 	def _hit(self, amount):
 		if self.divine_shield:
 			self.divine_shield = False
-			self.log("%r's divine shield prevents %i damage.", self, amount)
+			# self.log("%r's divine shield prevents %i damage.", self, amount)
 			return 0
 
 		amount = super()._hit(amount)
 
 		if self.health < self.min_health:
-			self.log("%r has HEALTH_MINIMUM of %i", self, self.min_health)
+			# self.log("%r has HEALTH_MINIMUM of %i", self, self.min_health)
 			self.damage = self.max_health - self.min_health
 
 		return amount
@@ -779,12 +779,12 @@ class Enchantment(BaseCard):
 		super()._set_zone(zone)
 
 	def apply(self, target):
-		self.log("Applying %r to %r", self, target)
+		# self.log("Applying %r to %r", self, target)
 		self.owner = target
 		if hasattr(self.data.scripts, "apply"):
 			self.data.scripts.apply(self, target)
 		if hasattr(self.data.scripts, "max_health"):
-			self.log("%r removes all damage from %r", self, target)
+			# self.log("%r removes all damage from %r", self, target)
 			target.damage = 0
 		self.zone = Zone.PLAY
 
@@ -820,7 +820,7 @@ class Weapon(rules.WeaponRules, LiveEntity):
 	def _set_zone(self, zone):
 		if zone == Zone.PLAY:
 			if self.controller.weapon:
-				self.log("Destroying old weapon %r", self.controller.weapon)
+				# self.log("Destroying old weapon %r", self.controller.weapon)
 				self.game.trigger(self, [actions.Destroy(self.controller.weapon)], event_args=None)
 			self.controller.weapon = self
 		elif self.zone == Zone.PLAY:
@@ -862,7 +862,7 @@ class HeroPower(PlayableCard):
 		if not self.is_usable():
 			raise InvalidAction("%r can't be used." % (self))
 
-		self.log("%s uses hero power %r on %r", self.controller, self, target)
+		# self.log("%s uses hero power %r on %r", self.controller, self, target)
 		df_logger.log_event("hero_power", "target: " + str(target), str(self.controller))
 		if self.has_target():
 			if not target:
@@ -875,7 +875,7 @@ class HeroPower(PlayableCard):
 
 		self.controller.times_hero_power_used_this_game += 1
 		self.controller.used_mana += self.cost
-		self.log("%s spends %i mana on %r", self.controller, self.controller.used_mana, self)
+		# self.log("%s spends %i mana on %r", self.controller, self.controller.used_mana, self)
 		self.target = None
 
 		return ret

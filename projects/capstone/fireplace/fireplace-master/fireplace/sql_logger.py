@@ -46,4 +46,4 @@ class sql_logger:
 
         return pd.read_sql("SELECT * FROM events", con=self.engine)
 
-df_logger = sql_logger(sql_file = "test4.db")
+df_logger = sql_logger(sql_file = "final_test.db")

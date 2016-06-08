@@ -86,7 +86,7 @@ class Player(Entity, TargetableByAuras):
 	@max_mana.setter
 	def max_mana(self, amount):
 		self._max_mana = min(self.max_resources, max(0, amount))
-		self.log("%s is now at %i mana crystals", self, self._max_mana)
+		# # self.log("%s is now at %i mana crystals", self, self._max_mana)
 		df_logger.log_event("max_mana", str(self._max_mana), str(self))
 
 	@property
@@ -174,7 +174,7 @@ class Player(Entity, TargetableByAuras):
 		return amount
 
 	def discard_hand(self):
-		self.log("%r discards their entire hand!", self)
+		# # self.log("%r discards their entire hand!", self)
 		# iterate the list in reverse so we don't skip over cards in the process
 		# yes it's stupid.
 		for card in self.hand[::-1]:
@@ -194,7 +194,7 @@ class Player(Entity, TargetableByAuras):
 		Returns how much mana is spent, after temporary mana adjustments.
 		"""
 		if self.spells_cost_health and source.type == CardType.SPELL:
-			self.log("%s spells cost %i health", self, amount)
+			# # self.log("%s spells cost %i health", self, amount)
 			self.game.queue_actions(self, [Hit(self.hero, amount)])
 			return amount
 		if self.temp_mana:
@@ -202,17 +202,17 @@ class Player(Entity, TargetableByAuras):
 			used_temp = min(self.temp_mana, amount)
 			amount -= used_temp
 			self.temp_mana -= used_temp
-		self.log("%s pays %i mana", self, amount)
+		# # self.log("%s pays %i mana", self, amount)
 		self.used_mana += amount
 		return amount
 
 	def shuffle_deck(self):
-		self.log("%r shuffles their deck", self)
+		# # self.log("%r shuffles their deck", self)
 		random.shuffle(self.deck)
 
 	def draw(self, count=1):
 		if self.cant_draw:
-			self.log("%s tries to draw %i cards, but can't draw", self, count)
+			# # self.log("%s tries to draw %i cards, but can't draw", self, count)
 			return None
 
 		ret = self.game.cheat_action(self, [Draw(self) * count])[0]
@@ -228,7 +228,7 @@ class Player(Entity, TargetableByAuras):
 				return
 			else:
 				card = self.deck[-1]
-			self.log("%s mills %r", self, card)
+			# # self.log("%s mills %r", self, card)
 			card.discard()
 			return card
 		else:

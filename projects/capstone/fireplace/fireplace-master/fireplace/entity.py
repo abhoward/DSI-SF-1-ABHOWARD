@@ -79,7 +79,7 @@ class BaseEntity(object):
 		Override to modify the damage dealt to a target from the given amount.
 		"""
 		if target.immune:
-			self.log("%r is immune to %s for %i damage", target, self, amount)
+			# self.log("%r is immune to %s for %i damage", target, self, amount)
 			return 0
 		return amount
 
@@ -102,7 +102,7 @@ class BuffableEntity(BaseEntity):
 
 	def clear_buffs(self):
 		if self.buffs:
-			self.log("Clearing buffs from %r", self)
+			# self.log("Clearing buffs from %r", self)
 			for buff in self.buffs[:]:
 				buff.remove()
 
