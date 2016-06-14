@@ -267,8 +267,8 @@ def play_full_game() -> ".game.Game":
 		print("Can mulligan %r" % (player.choice.cards))
 		log.info("Can mulligan %r" % (player.choice.cards))
 		mull_count = random.randint(0, len(player.choice.cards))
-		cards_to_mulligan = random.sample(player.choice.cards.id, mull_count)
-		cards_to_keep = [x for x in list(player.choice.cards.id) if x not in cards_to_mulligan]
+		cards_to_mulligan = random.sample(player.choice.cards, mull_count)
+		cards_to_keep = [x for x in list(player.choice.cards) if x not in cards_to_mulligan]
 		player.choice.choose(*cards_to_mulligan)
 		df_logger.log_event("cards_mulliganed", str(cards_to_mulligan), str(player))
 		df_logger.log_event("cards_kept", str(cards_to_keep), str(player))
