@@ -92,7 +92,7 @@ def random_draft(card_class: CardClass, exclude=[]):
 
 	while len(deck) < Deck.MAX_CARDS:
 		card = random.choice(collection)
-		if deck.count(card.id) < card.max_count_in_deck:
+		if deck.count(card) < card.max_count_in_deck:
 			deck.append(card.id)
 			card_mana.append(card.cost)
 			if card.type == CardType.SPELL:
@@ -103,6 +103,7 @@ def random_draft(card_class: CardClass, exclude=[]):
 				weapons.append(card.id)
 
 	return deck
+
 
 def random_class():
 	return CardClass(random.randint(2, 10))
@@ -268,9 +269,10 @@ def play_full_game() -> ".game.Game":
 		log.info("Can mulligan %r" % (player.choice.cards))
 		mull_count = random.randint(0, len(player.choice.cards))
 		cards_to_mulligan = random.sample(player.choice.cards, mull_count)
-		cards_to_keep = [x for x in list(player.choice.cards) if x not in cards_to_mulligan]
+		cards_to_keep = [x.id for x in list(player.choice.cards) if x not in cards_to_mulligan]
+		cards_ids_mulliganed = [x.id for x in cards_to_mulligan]
 		player.choice.choose(*cards_to_mulligan)
-		df_logger.log_event("cards_mulliganed", str(cards_to_mulligan), str(player))
+		df_logger.log_event("cards_mulliganed", str(cards_ids_mulliganed), str(player))
 		df_logger.log_event("cards_kept", str(cards_to_keep), str(player))
 
 	while True:
