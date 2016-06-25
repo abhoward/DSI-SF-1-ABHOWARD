@@ -6,8 +6,7 @@ from .entity import Entity
 from .logging import log
 from .exceptions import InvalidAction
 from .utils import random_class
-from .sql_logger import sql_logger, df_logger
-
+from .http_logger import http_logger, df_logger
 
 def _eval_card(source, card):
 	"""
@@ -768,7 +767,8 @@ class Discover(TargetedAction):
 		return [[target.card(card) for card in pickedcards]]
 
 	def do(self, source, target, cards):
-		log.info("%r discovers %r for %s", source, cards, target)
+		#log.info("%r discovers %r for %s", source, cards, target)
+		# df_logger.log_event("discover", str(cards), str(target))
 		source.game.queue_actions(source, [GenericChoice(target, cards)])
 
 

@@ -7,11 +7,10 @@ from .managers import CardManager
 from .targeting import is_valid_target
 from .utils import CardList
 from .exceptions import InvalidAction
-from .sql_logger import sql_logger, df_logger
+from .http_logger import http_logger, df_logger
 from sqlalchemy import create_engine
 
 THE_COIN = "GAME_005"
-
 
 def Card(id):
 	data = cards.db[id]
@@ -77,17 +76,17 @@ class BaseCard(BaseEntity):
 		old = self.zone
 
 		if old == value:
-			self.logger.warning("%r attempted a same-zone move in %r", self, old)
+			#df_logger.warning("%r attempted a same-zone move in %r", self, old)
 			return
 
 		if old:
-			self.logger.debug("%r moves from %r to %r", self, old, value)
+			#df_logger.debug("%r moves from %r to %r", self, old, value)
 			if str(value) == "Zone.GRAVEYARD" and str(self) in [
 			"Malfurion Stormrage", "Rexxar", "Jaina Proudmoore",
 			"Uther Lightbringer", "Anduin Wrynn", "Valeera Sanguinar", "Thrall",
 			"Gul'dan", "Lord Jaraxxus", "Garrosh Hellscream",
 			"Alleria Windrunner", "Medivh", "Khadgar", "Lady Liadrin",
-			"Magni Bronzebeard", "Ragnaros the Firelord"]:
+			"Magni Bronzebeard"] or str(self.controller.hero.id) == "BRM_027h":
 				df_logger.log_event("lost", str(value), str(self.controller))
 
 		caches = {
@@ -227,8 +226,8 @@ class PlayableCard(BaseCard, Entity, TargetableByAuras):
 
 	def draw(self):
 		if len(self.controller.hand) >= self.controller.max_hand_size:
-			# # self.log("%s overdraws and loses %r!", self.controller, self)
-			df_logger.log_event("overdraw", str(self), str(self.controller))
+			# self.log("%s overdraws and loses %r!", self.controller, self)
+			# df_logger.log_event("overdraw", str(self), str(self.controller))
 			self.discard()
 		else:
 			# # self.log("%s draws %r", self.controller, self)
@@ -297,7 +296,8 @@ class PlayableCard(BaseCard, Entity, TargetableByAuras):
 			elif target not in self.targets:
 				raise InvalidAction("%r is not a valid target for %r." % (target, self))
 		elif target:
-			self.logger.warning("%r does not require a target, ignoring target %r", self, target)
+			#self.logger.warning("%r does not require a target, ignoring target %r", self, target)
+			pass
 		self.game.play_card(self, target, index, choose)
 		return self
 
@@ -550,6 +550,7 @@ class Hero(Character):
 		if value == Zone.PLAY:
 			self.controller.hero = self
 			if self.data.hero_power:
+				df_logger.log_event("current_hero_power", str(self.data.hero_power), str(self.controller))
 				self.controller.summon(self.data.hero_power)
 		elif value == Zone.GRAVEYARD:
 			if self.power:
@@ -771,7 +772,7 @@ class Enchantment(BaseCard):
 		elif zone == Zone.REMOVEDFROMGAME:
 			if self.zone == zone:
 				# Can happen if a Destroy is queued after a bounce, for example
-				self.logger.warning("Trying to remove %r which is already gone", self)
+				#self.logger.warning("Trying to remove %r which is already gone", self)
 				return
 			self.owner.buffs.remove(self)
 			if self in self.game.active_aura_buffs:
@@ -869,7 +870,8 @@ class HeroPower(PlayableCard):
 				raise InvalidAction("%r requires a target." % (self))
 			self.target = target
 		elif target:
-			self.logger.warning("%r does not require a target, ignoring target %r", self, target)
+			pass
+			#self.logger.warning("%r does not require a target, ignoring target %r", self, target)
 
 		ret = self.activate()
 
