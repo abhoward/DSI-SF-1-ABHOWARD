@@ -6,8 +6,10 @@ from fireplace.utils import play_full_game
 import threading
 from multiprocessing import Queue
 import os
+from fireplace.http_logger import http_logger
+import time
 
-os.system("taskset -p 0xff %d" % os.getpid())
+# os.system("taskset -p 0xff %d" % os.getpid())
 
 def test_full_game():
     try:
@@ -25,18 +27,18 @@ def run_sim(numgames):
     for i in range(int(numgames)):
         test_full_game()
 
-
 def worker():
     """thread worker function"""
     print('Spawning worker...')
-    run_sim(2)
+    run_sim(1)
     return
 
 threads = []
-for i in range(40):
+for i in range(10):
     t = threading.Thread(target=worker)
-    threads.append(t)
+    # threads.append(t)
     t.start()
+    time.sleep(0.5)
 
 # if __name__ == "__main__":
 #     main(1)

@@ -8,7 +8,7 @@ from typing import List
 from xml.etree import ElementTree
 from hearthstone.enums import CardClass, CardType
 from .logging import log
-from .sql_logger import sql_logger, df_logger
+from .http_logger import http_logger, df_logger
 
 # Autogenerate the list of cardset modules
 _cards_module = os.path.join(os.path.dirname(__file__), "cards")
@@ -178,6 +178,7 @@ def weighted_card_choice(source, weights: List[int], card_sets: List[str], count
 
 
 def setup_game() -> ".game.Game":
+
 	from .game import Game
 	from .player import Player
 
@@ -185,29 +186,29 @@ def setup_game() -> ".game.Game":
 	random_num2 = random.randint(2, 10)
 
 	deck1 = random_draft(CardClass(random_num1))
-	df_logger.log_event("deck", str(deck1), "player1")
-	df_logger.log_event("deck_cost", str(np.mean(card_mana)), "player1")
-	df_logger.log_event("num_minions", str(len(minions)), "player1")
-	df_logger.log_event("num_spells", str(len(spells)), "player1")
-	df_logger.log_event("num_weapons", str(len(weapons)), "player1")
+	df_logger.log_event("deck", str(deck1), "Player1")
+	df_logger.log_event("deck_cost", str(np.mean(card_mana)), "Player1")
+	df_logger.log_event("num_minions", str(len(minions)), "Player1")
+	df_logger.log_event("num_spells", str(len(spells)), "Player1")
+	df_logger.log_event("num_weapons", str(len(weapons)), "Player1")
 	del card_mana[:] # Resetting list of cards' mana cost
 	del minions[:] # Resetting list of minions
 	del spells[:] # Resetting list of spells
 	del weapons[:] # Resetting list of weapons
 	deck2 = random_draft(CardClass(random_num2))
 	df_logger.log_event("deck", str(deck2), "player2")
-	df_logger.log_event("deck_cost", str(np.mean(card_mana)), "player2")
-	df_logger.log_event("num_minions", str(len(minions)), "player2")
-	df_logger.log_event("num_spells", str(len(spells)), "player2")
-	df_logger.log_event("num_weapons", str(len(weapons)), "player2")
+	df_logger.log_event("deck_cost", str(np.mean(card_mana)), "Player2")
+	df_logger.log_event("num_minions", str(len(minions)), "Player2")
+	df_logger.log_event("num_spells", str(len(spells)), "Player2")
+	df_logger.log_event("num_weapons", str(len(weapons)), "Player2")
 	del card_mana[:] # Resetting list of cards' mana cost
 	del minions[:] # Resetting list of minions
 	del spells[:] # Resetting list of spells
 	del weapons[:] # Resetting list of weapons
 	player1 = Player("Player1", deck1, CardClass(random_num1).default_hero)
 	player2 = Player("Player2", deck2, CardClass(random_num2).default_hero)
-	df_logger.log_event("player1_class", str(CardClass(random_num1)), "player1")
-	df_logger.log_event("player2_class", str(CardClass(random_num2)), "player2")
+	df_logger.log_event("player1_class", str(CardClass(random_num1)), "Player1")
+	df_logger.log_event("player2_class", str(CardClass(random_num2)), "Player2")
 
 	game = Game(players=(player1, player2))
 	game.start()
@@ -218,10 +219,11 @@ def setup_game() -> ".game.Game":
 def play_turn(game: ".game.Game") -> ".game.Game":
 	player = game.current_player
 	cards_cost = []
+
 	while True:
 		heropower = player.hero.power
-		# alec: changed random factor from 0.1 to 0.3
-		if heropower.is_usable() and random.random() < 0.3:
+		# alec: changed random factor from 0.1 to 0.4
+		if heropower.is_usable() and random.random() < 0.4:
 			if heropower.has_target():
 				heropower.use(target=random.choice(heropower.targets))
 			else:
@@ -231,6 +233,8 @@ def play_turn(game: ".game.Game") -> ".game.Game":
 		# iterate over our hand and play whatever is playable
 		# alec: made simulation play a card (if it's playable) no matter what,
 		# instead of having a random factor in as well.
+		current_hand = [x.id for x in player.hand]
+		df_logger.log_event("hand", str(current_hand), str(player))
 		for card in player.hand:
 			cards_cost.append(card.cost)
 			if card.is_playable():
@@ -239,14 +243,19 @@ def play_turn(game: ".game.Game") -> ".game.Game":
 					card = random.choice(card.choose_cards)
 				if card.has_target():
 					target = random.choice(card.targets)
-				print("Playing %r on %r" % (card, target))
-				log.info("Playing %r on %r" % (card, target))
+				# print("Playing %r on %r" % (card, target))
+				# log.info("Playing %r on %r" % (card, target))
 				card.play(target=target)
+				df_logger.log_event("card_played", str(card.id), str(player))
 
 				if player.choice:
 					choice = random.choice(player.choice.cards)
-					print("Choosing card %r" % (choice))
-					log.info("Choosing card %r" % (choice))
+					# insert df_logger for choice here
+					discover_choices = [x.id for x in player.choice.cards]
+					df_logger.log_event("discover_choices", str(discover_choices), str(player))
+					df_logger.log_event("choice", str(choice.id), str(player.name))
+					# print("Choosing card %r" % (choice))
+					# log.info("Choosing card %r" % (choice))
 					player.choice.choose(choice)
 
 				continue
@@ -265,9 +274,12 @@ def play_full_game() -> ".game.Game":
 	game = setup_game()
 
 	for player in game.players:
-		print("Can mulligan %r" % (player.choice.cards))
+		# print("Can mulligan %r" % (player.choice.cards))
+		mulligan_choices = [x.id for x in player.choice.cards]
+		df_logger.log_event("mulligan_choices", str(mulligan_choices), str(player))
 		log.info("Can mulligan %r" % (player.choice.cards))
 		mull_count = random.randint(0, len(player.choice.cards))
+		df_logger.log_event("mulligan_count", str(mull_count), str(player))
 		cards_to_mulligan = random.sample(player.choice.cards, mull_count)
 		cards_to_keep = [x.id for x in list(player.choice.cards) if x not in cards_to_mulligan]
 		cards_ids_mulliganed = [x.id for x in cards_to_mulligan]

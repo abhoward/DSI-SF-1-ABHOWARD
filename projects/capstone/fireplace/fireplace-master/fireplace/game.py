@@ -11,7 +11,8 @@ from .managers import GameManager
 from .utils import CardList
 from .exceptions import GameOver
 from .player import Player
-from .sql_logger import sql_logger, df_logger
+from .http_logger import http_logger, df_logger
+
 
 class BaseGame(Entity):
 	type = CardType.GAME
@@ -113,6 +114,7 @@ class BaseGame(Entity):
 	def attack(self, source, target):
 		type = BlockType.ATTACK
 		actions = [Attack(source, target)]
+		df_logger.log_event("attack", str(source.id + " attacks " + target.id), str(self.current_player))
 		return self.action_block(source, actions, type, target=target)
 
 	def joust(self, source, challenger, defender, actions):
@@ -183,8 +185,8 @@ class BaseGame(Entity):
 						player.playstate = PlayState.WON
 			self.state = State.COMPLETE
 			self.manager.step(self.next_step, Step.FINAL_WRAPUP)
+			df_logger.set_new_game()
 			self.manager.step(self.next_step, Step.FINAL_GAMEOVER)
-			df_logger.save_increment_last_game_id()
 			self.manager.step(self.next_step)
 
 	def queue_actions(self, source, actions, event_args=None):
@@ -283,6 +285,8 @@ class BaseGame(Entity):
 		# self.log("%s ends turn %i", self.current_player, self.turn)
 		df_logger.log_event("mana_used", str(self.current_player.used_mana), str(self.current_player))
 		df_logger.log_event("turn_end", str(self.turn), str(self.current_player))
+		board_state2 = [x.id for x in self.current_player.field]
+		df_logger.log_event("board_state", str(board_state2), str(self.current_player))
 
 		entities = self.entities
 
@@ -314,6 +318,8 @@ class BaseGame(Entity):
 		self.turn += 1
 		# self.log("%s begins turn %i", player, self.turn)
 		df_logger.log_event("turn_begins"  , str(self.turn), str(player))
+		board_state1 = [x.id for x in player.field]
+		df_logger.log_event("board_state", str(board_state1), str(player))
 		self.current_player = player
 		self.manager.step(self.next_step, Step.MAIN_START_TRIGGERS)
 		self.manager.step(self.next_step, Step.MAIN_START)

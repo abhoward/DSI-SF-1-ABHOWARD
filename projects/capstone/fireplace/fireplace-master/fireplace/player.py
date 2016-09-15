@@ -9,8 +9,9 @@ from .entity import Entity
 from .entity import slot_property
 from .managers import PlayerManager
 from .utils import CardList
-from .sql_logger import sql_logger, df_logger
+from .http_logger import http_logger, df_logger
 from sqlalchemy import create_engine
+
 
 class Player(Entity, TargetableByAuras):
 	Manager = PlayerManager
@@ -87,6 +88,7 @@ class Player(Entity, TargetableByAuras):
 	def max_mana(self, amount):
 		self._max_mana = min(self.max_resources, max(0, amount))
 		# # self.log("%s is now at %i mana crystals", self, self._max_mana)
+		global df_logger
 		df_logger.log_event("max_mana", str(self._max_mana), str(self))
 
 	@property
